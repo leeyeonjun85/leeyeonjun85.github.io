@@ -968,7 +968,7 @@ Non-trainable params: 0
 
 <br>
 
-![image](https://leeyeonjun85.github.io/home/assets/images/etc/kalkal.jpg){: .align-center width="60%"}  
+![image](https://leeyeonjun85.github.io/assets/images/etc/kalkal.jpg){: .align-center width="60%"}  
 
 
 
