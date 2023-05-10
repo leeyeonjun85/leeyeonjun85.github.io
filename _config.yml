@@ -20,16 +20,16 @@ locale                   : "ko-KR"
 # locale                   : "en-US"
 title                    : "Lee Yeonjun's Git Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "My Dev. Log"
 name                     : "Lee Yeonjun"
 description              : "Lee Younjun's Git Blog is Development Blog about Data Analysis, Data Science, Data Engineering, Machine Learning, Deep Learning and AI"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-# "https://leeyeonjun85.github.io/" 
-repository               : 
-# "leeyeonjun85/"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+repository               : "leeyeonjun85.github.io"
+teaser                   : "/assets/images/500x300.png"
+# path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/favicon/apple-touch-icon.png"
+# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
