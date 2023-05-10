@@ -171,7 +171,7 @@ print(f"""✅ ISO UTC
 {datetime.datetime.utcfromtimestamp(datetime.datetime.now().timestamp()).strftime('%Y-%m-%dT%H:%M:%S+00:00')}
 
 ✅ ISO KST
-{time.strftime('%Y-%m-%dT%H:%M:%S+00:00')}
+{time.strftime('%Y-%m-%dT%H:%M:%S+09:00')}
 {datetime.datetime.fromtimestamp(datetime.datetime.now().timestamp()).strftime('%Y-%m-%dT%H:%M:%S+09:00')}
 """)
 ```
