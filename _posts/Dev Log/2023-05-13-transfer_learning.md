@@ -51,7 +51,6 @@ last_modified_at: 2023-05-13
 
 ## 개요
 - 사전학습 모델 : [MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2)
-- 데이터셋 : [개 vs 고양이](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 
 
 - 필요한 라이브러리 불러오기  
