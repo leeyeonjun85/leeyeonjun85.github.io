@@ -47,19 +47,19 @@ last_modified_at: 2023-05-29
 
 ## Daily Reflection : 3L 회고
 ### 배운 것(Learned)
-서
+CASE WHEN THEN 구문에 대하여 학습하였다.
 {: .notice--success}
 
 <br>
 
 ### 아쉬웠던 점(Lacked)
-M
+풀이 속도가 느려서 다른 공부를 많이 못했다.
 {: .notice--danger}
 
 <br>
 
 ### 좋았던 점(Liked)
-한
+SQL에 점점 자신감이 생긴다.
 {: .notice--warning}
 
 
@@ -604,32 +604,40 @@ WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
 
 #### 게시글 ID, 작성자 ID, 게시글 제목, 가격, 거래상태거래상태가 SALE 이면 판매중, RESERVED이면 예약중, DONE이면 거래완료 분류하여 출력시키기
 ```sql
-SELECT      *
+SELECT      BOARD_ID, WRITER_ID, TITLE, PRICE,
+            CASE  WHEN STATUS = 'SALE' THEN '판매중'
+                  WHEN STATUS = 'RESERVED' THEN '예약중'
+                  WHEN STATUS = 'DONE' THEN '거래완료'
+                  END STATUS
 FROM        USED_GOODS_BOARD
 WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
 ;
 ```
-  - IF(특성 IS NULL, 결측이면 수행, 아니면 수행)
 
 <br>
 
-#### 오름차순 정렬
+#### 게시글 ID를 기준으로 내림차순 정렬
 ```sql
-SELECT      WAREHOUSE_ID, WAREHOUSE_NAME,
-            ADDRESS, IF(FREEZER_YN IS NULL, 'N', FREEZER_YN)
-FROM        FOOD_WAREHOUSE
-WHERE       WAREHOUSE_NAME LIKE '%경기%'
-ORDER BY    WAREHOUSE_ID
+SELECT      BOARD_ID, WRITER_ID, TITLE, PRICE,
+            CASE  WHEN STATUS = 'SALE' THEN '판매중'
+                  WHEN STATUS = 'RESERVED' THEN '예약중'
+                  WHEN STATUS = 'DONE' THEN '거래완료'
+                  END AS STATUS
+FROM        USED_GOODS_BOARD
+WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
+ORDER BY    BOARD_ID DESC
 ;
 ```
   - 통과🎉
-
-
-
-
-
-
-
+  - `CASE WHEN THEN` 이용하기
+    ```sql
+    CASE
+        WHEN 조건1 THEN 값1
+        WHEN 조건2 THEN 값2
+        WHEN 조건3 THEN 값3
+        ELSE 값4
+    END AS alias
+    ```
 
 
 
