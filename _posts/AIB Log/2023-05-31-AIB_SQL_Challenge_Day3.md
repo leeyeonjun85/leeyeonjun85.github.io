@@ -32,7 +32,7 @@ last_modified_at: 2023-05-31
 
 
 
-# 코드스테이츠와 함께하는 'SQL Challenge' 2일차  
+# 코드스테이츠와 함께하는 'SQL Challenge' 3일차  
 > 코드스테이츠에서 5월 연휴기간동안 `방학`을 줬다.
 > 방학에는 `방학숙제`가 있다.
 > 방학숙제는 프로그래머스 스쿨 "`SQL 고득점 Kit`" 하루에 3문제씩 풀기
@@ -47,19 +47,19 @@ last_modified_at: 2023-05-31
 
 ## Daily Reflection : 3L 회고
 ### 배운 것(Learned)
-CASE WHEN THEN 구문에 대하여 학습하였다.
+aa
 {: .notice--success}
 
 <br>
 
 ### 아쉬웠던 점(Lacked)
-풀이 속도가 느려서 다른 공부를 많이 못했다.
+풀
 {: .notice--danger}
 
 <br>
 
 ### 좋았던 점(Liked)
-SQL에 점점 자신감이 생긴다.
+S
 {: .notice--warning}
 
 
@@ -70,80 +70,113 @@ SQL에 점점 자신감이 생긴다.
 
 
 
-## SELECT : 강원도에 위치한 생산공장 목록 출력하기
+## SELECT : 서울에 위치한 식당 목록 출력하기
 
 ### 문제 설명과 문제📜  
 
 #### 문제 설명  
-> 다음은 식품공장의 정보를 담은 `FOOD_FACTORY` 테이블입니다. `FOOD_FACTORY` 테이블은 다음과 같으며 `FACTORY_ID, FACTORY_NAME, ADDRESS, TLNO`는 각각 공장 ID, 공장 이름, 주소, 전화번호를 의미합니다.
+> 다음은 식당의 정보를 담은 `REST_INFO` 테이블과 식당의 리뷰 정보를 담은 `REST_REVIEW` 테이블입니다. `REST_INFO` 테이블은 다음과 같으며 `REST_ID, REST_NAME, FOOD_TYPE, VIEWS, FAVORITES, PARKING_LOT, ADDRESS, TEL`은 식당 ID, 식당 이름, 음식 종류, 조회수, 즐겨찾기수, 주차장 유무, 주소, 전화번호를 의미합니다.
 
 | Column name	| Type	        | Nullable  |
 | :---:         | :---:         | :---:     |
-| FACTORY_ID    | VARCHAR(10)	| FALSE     |
-| FACTORY_NAME  | VARCHAR(50)	| FALSE     |
-| ADDRESS       | VARCHAR(100)	| FALSE     |
-| TLNO          | VARCHAR(20)	| TRUE      |
+| REST_ID       | VARCHAR(5)	| FALSE     |
+| REST_NAME     | VARCHAR(50)	| FALSE     |
+| FOOD_TYPE     | VARCHAR(20)	| TRUE      |
+| VIEWS         | NUMBER	    | TRUE      |
+| FAVORITES     | NUMBER	    | TRUE      |
+| PARKING_LOT   | VARCHAR(1)	| TRUE      |
+| ADDRESS       | VARCHAR(100)	| TRUE      |
+| TEL           | VARCHAR(100)	| TRUE      |
+
+> `REST_REVIEW` 테이블은 다음과 같으며 `REVIEW_ID, REST_ID, MEMBER_ID, REVIEW_SCORE, REVIEW_TEXT,REVIEW_DATE`는 각각 리뷰 ID, 식당 ID, 회원 ID, 점수, 리뷰 텍스트, 리뷰 작성일을 의미합니다.
+
+| Column name   | Type	        | Nullable  |
+| :---:         | :---:         | :---:     |
+| REVIEW_ID	    | VARCHAR(10)	| FALSE     |
+| REST_ID	    | VARCHAR(10)	| TRUE      |
+| MEMBER_ID	    | VARCHAR(100)	| TRUE      |
+| REVIEW_SCORE	| NUMBER	    | TRUE      |
+| REVIEW_TEXT	| VARCHAR(1000)	| TRUE      |
+| REVIEW_DATE	| DATE	        | TRUE      |
+
 
 <br> 
 
 #### 문제  
-> `FOOD_FACTORY` 테이블에서 강원도에 위치한 식품공장의 공장 ID, 공장 이름, 주소를 조회하는 SQL문을 작성해주세요. 이때 결과는 공장 ID를 기준으로 오름차순 정렬해주세요.
+> `REST_INFO`와 `REST_REVIEW` 테이블에서 서울에 위치한 식당들의 식당 ID, 식당 이름, 음식 종류, 즐겨찾기수, 주소, 리뷰 평균 점수를 조회하는 SQL문을 작성해주세요. 이때 리뷰 평균점수는 소수점 세 번째 자리에서 반올림 해주시고 결과는 평균점수를 기준으로 내림차순 정렬해주시고, 평균점수가 같다면 즐겨찾기수를 기준으로 내림차순 정렬해주세요.
 
 
 <br><br>
 
 
 ### 풀이🔎  
-#### `FOOD_FACTORY` 테이블 살펴보기
+#### `REST_INFO` 테이블 살펴보기
 ```sql
 SELECT      *
-FROM        FOOD_FACTORY;
+FROM        REST_INFO;
 ```
-  - `강원도에 위치한 식품공장`을 출력하기 위해서는 두가지 방법이 있을 것 같음
-    1. `주소(ADDRESS)` 특성에서 `강원도` 문자가 포함된 케이스 추출
-    2. `전화번호(TLNO)` 특성에서 `강원도 지역번호(033)`으로 시작하는 케이스 추출
-  - `전화번호(TLNO)` 특성에는 결측치가 있기 때문에, 1번 방식으로 강원도를 추출하자
+  - 주소(ADDRESS)가 `서울`로 시작하는 케이스로 조건 출력하면 될 것 같음
 
 <br>
 
-#### `강원도에 위치한 식품공장` 출력하기
+#### `REST_REVIEW` 테이블 살펴보기
 ```sql
 SELECT      *
-FROM        FOOD_FACTORY
-WHERE       ADDRESS LIKE '%강원_%'
-;
+FROM        REST_REVIEW;
 ```
-  - `WHERE LIKE + % , _` 으로 문자열 매칭 조건 검색하기
-    - `WHERE ADDRESS LIKE '강원도%'` : `강원도`로 시작하는 케이스
-    - `WHERE ADDRESS LIKE '%강원도'` : `강원도`로 끝나는 케이스
-    - `WHERE ADDRESS LIKE '%강원도%'` : `강원도`가 포함되는 케이스
-    - `WHERE ADDRESS LIKE '%강__'` : `강`으로 시작하고 아무문자2개가 따라오는 케이스
-    - `WHERE ADDRESS NOT LIKE '%강원도%'` : `강원도`가 포함되지 않은 케이스
 
 <br>
 
-#### 추가 : `전화번호가 033으로 시작`하는 케이스 출력하기
+#### 테이블 `JOIN`
 ```sql
 SELECT      *
-FROM        FOOD_FACTORY
-WHERE       TLNO LIKE '033%'
+FROM        REST_INFO AS INFO
+JOIN        REST_REVIEW AS REVIEW
+        ON  INFO.REST_ID = REVIEW.REST_ID
 ;
 ```
-  - `전화번호가 033으로 시작`하는 케이스로 조회해도 위랑 똑같은 결과를 얻음
+
+<br>
+
+#### `서울에 위치한 식당` 출력하기
+```sql
+SELECT      *
+FROM        REST_INFO AS INFO
+JOIN        REST_REVIEW AS REVIEW
+    ON      INFO.REST_ID = REVIEW.REST_ID
+GROUP BY    INFO.REST_ID
+HAVING      INFO.ADDRESS LIKE '서울%'
+;
+```
+
+<br>
+
+#### `식당 ID, 식당 이름, 음식 종류, 즐겨찾기수, 주소, 리뷰 평균 점수` 출력하기
+```sql
+SELECT      INFO.REST_ID, INFO.REST_NAME, INFO.FOOD_TYPE, INFO.FAVORITES, INFO.ADDRESS,
+            ROUND(AVG(REVIEW.REVIEW_SCORE), 2) AS SCORE
+FROM        REST_INFO AS INFO
+JOIN        REST_REVIEW AS REVIEW
+        ON  INFO.REST_ID = REVIEW.REST_ID
+GROUP BY    REST_ID
+HAVING      INFO.ADDRESS LIKE '서울%'
+;
+```
 
 <br>
 
 #### 출력형식에 맞춰 출력하기
 ```sql
-SELECT      FACTORY_ID, FACTORY_NAME, ADDRESS
-FROM        FOOD_FACTORY
-WHERE       TLNO LIKE '033%'
-ORDER   BY  FACTORY_ID ASC
+SELECT      INFO.REST_ID, INFO.REST_NAME, INFO.FOOD_TYPE, INFO.FAVORITES, INFO.ADDRESS,
+            ROUND(AVG(REVIEW.REVIEW_SCORE), 2) AS SCORE
+FROM        REST_INFO AS INFO
+JOIN        REST_REVIEW AS REVIEW
+        ON  INFO.REST_ID = REVIEW.REST_ID
+GROUP BY    REST_ID
+HAVING      INFO.ADDRESS LIKE '서울%'
+ORDER BY    SCORE DESC, INFO.FAVORITES DESC
 ;
 ```
-  - `ORDER BY FACTORY_ID ASC`에서 ASC는 기본값이기 때문에 생략 가능
-    - `ORDER BY FACTORY_ID`
-  - `WHERE TLNO LIKE '033%'`대신 `WHERE ADDRESS LIKE '강원도%'`처럼 `강원도`로 시작하는 주소로 출력해도 똑같음
 
 
 
@@ -153,176 +186,42 @@ ORDER   BY  FACTORY_ID ASC
 
 
 
-## SUM, MAX, MIN : 가격이 제일 비싼 식품의 정보 출력하기  
+## GROUP BY : 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기  
 
 ### 문제 설명과 문제📜  
 
 #### 문제 설명  
-> 다음은 식품의 정보를 담은 `FOOD_PRODUCT` 테이블입니다. `FOOD_PRODUCT` 테이블은 다음과 같으며 `PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE`는 식품 ID, 식품 이름, 식품 코드, 식품분류, 식품 가격을 의미합니다.
+> 다음은 어느 자동차 대여 회사에서 대여중인 자동차들의 정보를 담은 `CAR_RENTAL_COMPANY_CAR` 테이블입니다. `CAR_RENTAL_COMPANY_CAR` 테이블은 아래와 같은 구조로 되어있으며, `CAR_ID, CAR_TYPE, DAILY_FEE, OPTIONS` 는 각각 자동차 ID, 자동차 종류, 일일 대여 요금(원), 자동차 옵션 리스트를 나타냅니다.
 
 | Column name	| Type	        | Nullable  |
 | :---:         | :---:         | :---:     |
-| PRODUCT_ID    | VARCHAR(10)	| FALSE     |
-| PRODUCT_NAME  | VARCHAR(50)	| FALSE     |
-| PRODUCT_CD    | VARCHAR(10)	| TRUE      |
-| CATEGORY      | VARCHAR(10)	| TRUE      |
-| PRICE         | NUMBER	    | TRUE      |
+| CAR_ID        | INTEGER	    | FALSE     |
+| CAR_TYPE      | VARCHAR(255)	| FALSE     |
+| DAILY_FEE     | INTEGER	    | FALSE     |
+| OPTIONS       | VARCHAR(255)	| FALSE     |
+
+> 자동차 종류는 '세단', 'SUV', '승합차', '트럭', '리무진' 이 있습니다. 자동차 옵션 리스트는 콤마(',')로 구분된 키워드 리스트(옵션 리스트 값 예시: '열선시트', '스마트키', '주차감지센서')로 되어있으며, 키워드 종류는 '주차감지센서', '스마트키', '네비게이션', '통풍시트', '열선시트', '후방카메라', '가죽시트' 가 있습니다.
 
 <br>
 
 #### 문제  
-> `FOOD_PRODUCT` 테이블에서 가격이 제일 비싼 식품의 식품 ID, 식품 이름, 식품 코드, 식품분류, 식품 가격을 조회하는 SQL문을 작성해주세요.
+> `CAR_RENTAL_COMPANY_CAR` 테이블에서 '통풍시트', '열선시트', '가죽시트' 중 하나 이상의 옵션이 포함된 자동차가 자동차 종류 별로 몇 대인지 출력하는 SQL문을 작성해주세요. 이때 자동차 수에 대한 컬럼명은 `CARS`로 지정하고, 결과는 자동차 종류를 기준으로 오름차순 정렬해주세요.
 
 
 <br><br>
 
 
 ### 풀이🔎  
-
-#### `FOOD_PRODUCT` 테이블 `PRICE`으로 내림차순 정렬하여 살펴보기
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-ORDER   BY  PRICE DESC
-;
-```
-  - `PRICE`으로 내림차순 정렬하여 살펴보면
-    -`P0051	맛있는배추김치	CD_KC00001	김치	19000`이 가장 비싼 식품
-  - `LIMIT 1`만 추가해도 될 것 같음
-
-<br>
-
-#### `LIMIT 1`로 가격이 제일 비싼 식품 출력하기
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-ORDER   BY  PRICE DESC
-LIMIT       1
-;
-```
-  - 통과🎉
-
-<br>
-
-#### 추가 : `MAX()`함수 이용하여 가격이 제일 비싼 식품 출력하기
-```sql
-SELECT      PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, MAX(PRICE)
-FROM        FOOD_PRODUCT
-;
-```
-  - 이렇게 하면, `MAX(PRICE)`는 최대값이 나오는데, 나머지 칼럼은 1번 인덱스의 값들이 표시됨
-
-<br>
-
-#### 추가 : `MAX()`함수 + `WHERE 서브쿼리`
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-WHERE       PRICE = (
-                    SELECT      MAX(PRICE)
-                    FROM        FOOD_PRODUCT
-                    )
-;
-```
-  - 통과🎉
-  - 출제자의 의도는 `MAX(PRICE)`를 사용하는 것이 맞을 것 같음
-
-
-
-
-<br><br><br><br>
-
-
-
-
-## GROUP BY : 식품분류별 가장 비싼 식품의 정보 조회하기  
-
-### 문제 설명과 문제📜  
-
-#### 문제 설명  
-> 다음은 식품의 정보를 담은 `FOOD_PRODUCT` 테이블입니다. `FOOD_PRODUCT` 테이블은 다음과 같으며 `PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE`는 식품 ID, 식품 이름, 식품코드, 식품분류, 식품 가격을 의미합니다.
-
-| Column name	| Type	        | Nullable  |
-| :---:         | :---:         | :---:     |
-| PRODUCT_ID    | VARCHAR(10)	| FALSE     |
-| PRODUCT_NAME  | VARCHAR(50)	| FALSE     |
-| PRODUCT_CD    | VARCHAR(10)	| TRUE      |
-| CATEGORY      | VARCHAR(10)	| TRUE      |
-| PRICE         | NUMBER	    | TRUE      |
-
-<br>
-
-#### 문제  
-> `FOOD_PRODUCT` 테이블에서 식품분류별로 가격이 제일 비싼 식품의 분류, 가격, 이름을 조회하는 SQL문을 작성해주세요. 이때 식품분류가 '과자', '국', '김치', '식용유'인 경우만 출력시켜 주시고 결과는 식품 가격을 기준으로 내림차순 정렬해주세요.
-
-
-<br><br>
-
-
-### 풀이🔎  
-
-#### `FOOD_PRODUCT` 테이블 살펴보기
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-;
-```
-  - `CATEGORY` 에는 면, 식용유 등이 있음
-
-<br>
-
-#### 식품분류별 가격이 제일 비싼 식품의 가격 출력하기
-```sql
-SELECT      MAX(PRICE)
-FROM        FOOD_PRODUCT
-GROUP   BY  CATEGORY
-;
-```
-  - 가장 비싼 식용유 `P0012 맛있는올리브유 CD_OL00002 식용유 7200`
-  - 가장 비싼 김치 `P0051 맛있는배추김치 CD_KC00001 김치 19000`
-
-<br>
-
-#### `WHERE 서브쿼리 + MAX()` 사용하여 식품분류별 가격이 제일 비싼 식품의 가격 출력하기
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-WHERE       PRICE IN (
-                    SELECT      MAX(PRICE)
-                    FROM        FOOD_PRODUCT
-                    GROUP   BY  CATEGORY
-                    )
-;
-```
-
-<br>
-
-#### `식품분류가 '과자', '국', '김치', '식용유'인 경우`만 출력하기
-```sql
-SELECT      *
-FROM        FOOD_PRODUCT
-WHERE       PRICE IN (
-                    SELECT      MAX(PRICE)
-                    FROM        FOOD_PRODUCT
-                    GROUP   BY  CATEGORY
-                    )
-        AND CATEGORY IN ('과자', '국', '김치', '식용유')
-;
-```
-
-<br>
 
 #### 식품의 분류, 가격, 이름을 식품 가격을 기준으로 내림차순 정렬
 ```sql
-SELECT      CATEGORY, PRICE, PRODUCT_NAME
-FROM        FOOD_PRODUCT
-WHERE       PRICE IN (
-                    SELECT      MAX(PRICE)
-                    FROM        FOOD_PRODUCT
-                    GROUP   BY  CATEGORY
-                    )
-        AND CATEGORY IN ('과자', '국', '김치', '식용유')
-ORDER   BY  PRICE DESC
+SELECT      CAR_TYPE, COUNT(CAR_TYPE) AS CARS
+FROM        CAR_RENTAL_COMPANY_CAR
+WHERE       OPTIONS LIKE '%열선시트%'
+    OR      OPTIONS LIKE '%통풍시트%'
+    OR      OPTIONS LIKE '%가죽시트%'
+GROUP BY    CAR_TYPE
+ORDER BY    CAR_TYPE ASC
 ;
 ```
   - 통과🎉
@@ -337,35 +236,47 @@ ORDER   BY  PRICE DESC
 
 
 
-## JOIN : 주문량이 많은 아이스크림들 조회하기  
+## JOIN : 특정 기간동안 대여 가능한 자동차들의 대여비용 구하기  
 
 ### 문제 설명과 문제📜  
 
 #### 문제 설명  
-> 다음은 아이스크림 가게의 상반기 주문 정보를 담은 `FIRST_HALF` 테이블과 7월의 아이스크림 주문 정보를 담은 `JULY` 테이블입니다.
-> `FIRST_HALF` 테이블 구조는 다음과 같으며, `SHIPMENT_ID, FLAVOR, TOTAL_ORDER`는 각각 아이스크림 공장에서 아이스크림 가게까지의 출하 번호, 아이스크림 맛, 상반기 아이스크림 총주문량을 나타냅니다.
-> `FIRST_HALF` 테이블의 기본 키는 `FLAVOR`입니다. `FIRST_HALF`테이블의 `SHIPMENT_ID`는 `JULY`테이블의 `SHIPMENT_ID`의 외래 키입니다.
+> 다음은 어느 자동차 대여 회사에서 대여 중인 자동차들의 정보를 담은 `CAR_RENTAL_COMPANY_CAR` 테이블과 자동차 대여 기록 정보를 담은 `CAR_RENTAL_COMPANY_RENTAL_HISTORY` 테이블과 자동차 종류 별 대여 기간 종류 별 할인 정책 정보를 담은 `CAR_RENTAL_COMPANY_DISCOUNT_PLAN` 테이블 입니다.
+> `CAR_RENTAL_COMPANY_CAR` 테이블은 아래와 같은 구조로 되어있으며, `CAR_ID, CAR_TYPE, DAILY_FEE, OPTIONS` 는 각각 자동차 ID, 자동차 종류, 일일 대여 요금(원), 자동차 옵션 리스트를 나타냅니다.
 
-| NAME        | TYPE	      | NULLABLE  |
-| :---:       | :---:       | :---:     |
-| SHIPMENT_ID | INT(N)	    | FALSE     |
-| FLAVOR      | VARCHAR(N)  | FALSE     |
-| TOTAL_ORDER | INT(N)	    | FALSE     |
+| Column name	| Type	        | Nullable  |
+| :---:         | :---:         | :---:     |
+| CAR_ID        | INTEGER	    | FALSE     |
+| CAR_TYPE      | VARCHAR(255)	| FALSE     |
+| DAILY_FEE     | INTEGER	    | FALSE     |
+| OPTIONS       | VARCHAR(255)	| FALSE     |
 
-> `JULY` 테이블 구조는 다음과 같으며, `SHIPMENT_ID, FLAVOR, TOTAL_ORDER` 은 각각 아이스크림 공장에서 아이스크림 가게까지의 출하 번호, 아이스크림 맛, 7월 아이스크림 총주문량을 나타냅니다.
-> `JULY` 테이블의 기본 키는 `SHIPMENT_ID`입니다. `JULY`테이블의 `FLAVOR`는 `FIRST_HALF` 테이블의 `FLAVOR`의 외래 키입니다.
-> 7월에는 아이스크림 주문량이 많아 같은 아이스크림에 대하여 서로 다른 두 공장에서 아이스크림 가게로 출하를 진행하는 경우가 있습니다. 이 경우 같은 맛의 아이스크림이라도 다른 출하 번호를 갖게 됩니다.
+> 자동차 종류는 '세단', 'SUV', '승합차', '트럭', '리무진' 이 있습니다. 자동차 옵션 리스트는 콤마(',')로 구분된 키워드 리스트(예: ''열선시트,스마트키,주차감지센서'')로 되어있으며, 키워드 종류는 '주차감지센서', '스마트키', '네비게이션', '통풍시트', '열선시트', '후방카메라', '가죽시트' 가 있습니다.
 
-| NAME        | TYPE	      | NULLABLE  |
-| :---:       | :---:       | :---:     |
-| SHIPMENT_ID | INT(N)	    | FALSE     |
-| FLAVOR      | VARCHAR(N)  | FALSE     |
-| TOTAL_ORDER | INT(N)	    | FALSE     |
+> `CAR_RENTAL_COMPANY_RENTAL_HISTORY` 테이블은 아래와 같은 구조로 되어있으며, `HISTORY_ID, CAR_ID, START_DATE, END_DATE` 는 각각 자동차 대여 기록 ID, 자동차 ID, 대여 시작일, 대여 종료일을 나타냅니다.
+
+| Column name	| Type	    | Nullable  |
+| :---:         | :---:     | :---:     |
+| HISTORY_ID    | INTEGER   | FALSE     |
+| CAR_ID        | INTEGER   | FALSE     |
+| START_DATE    | DATE      | FALSE     |
+| END_DATE      | DATE      | FALSE     |
+
+> `CAR_RENTAL_COMPANY_DISCOUNT_PLAN` 테이블은 아래와 같은 구조로 되어있으며, `PLAN_ID, CAR_TYPE, DURATION_TYPE, DISCOUNT_RATE` 는 각각 요금 할인 정책 ID, 자동차 종류, 대여 기간 종류, 할인율(%)을 나타냅니다.
+
+| Column name	| Type	        | Nullable  |
+| :---:         | :---:         | :---:     |
+| PLAN_ID       | INTEGER	    | FALSE     |
+| CAR_TYPE      | VARCHAR(255)	| FALSE     |
+| DURATION_TYPE | VARCHAR(255)	| FALSE     |
+| DISCOUNT_RATE | INTEGER	    | FALSE     |
+
+> 할인율이 적용되는 대여 기간 종류로는 '7일 이상' (대여 기간이 7일 이상 30일 미만인 경우), '30일 이상' (대여 기간이 30일 이상 90일 미만인 경우), '90일 이상' (대여 기간이 90일 이상인 경우) 이 있습니다. 대여 기간이 7일 미만인 경우 할인정책이 없습니다.
 
 <br>
 
 #### 문제  
-> 7월 아이스크림 총 주문량과 상반기의 아이스크림 총 주문량을 더한 값이 큰 순서대로 상위 3개의 맛을 조회하는 SQL 문을 작성해주세요.
+> `CAR_RENTAL_COMPANY_CAR` 테이블과 `CAR_RENTAL_COMPANY_RENTAL_HISTORY` 테이블과 `CAR_RENTAL_COMPANY_DISCOUNT_PLAN` 테이블에서 자동차 종류가 '세단' 또는 'SUV' 인 자동차 중 2022년 11월 1일부터 2022년 11월 30일까지 대여 가능하고 30일간의 대여 금액이 50만원 이상 200만원 미만인 자동차에 대해서 자동차 ID, 자동차 종류, 대여 금액(컬럼명: FEE) 리스트를 출력하는 SQL문을 작성해주세요. 결과는 대여 금액을 기준으로 내림차순 정렬하고, 대여 금액이 같은 경우 자동차 종류를 기준으로 오름차순 정렬, 자동차 종류까지 같은 경우 자동차 ID를 기준으로 내림차순 정렬해주세요.
 
 
 <br><br>
@@ -373,95 +284,26 @@ ORDER   BY  PRICE DESC
 
 ### 풀이🔎  
 
-#### `FIRST_HALF` 테이블 살펴보기
-```sql
-SELECT      *
-FROM        FIRST_HALF
-;
-```
-  - 7개 케이스
-
-<br>
-
-#### `JULY` 테이블 살펴보기
-```sql
-SELECT      *
-FROM        JULY
-;
-```
-  - 8개 케이스
-  - `strawberry` 맛의 `SHIPMENT_ID`가 109, 209 두 개임
-
-<br>
-
-#### `UNION` 으로 두 테이블 세로로 합치기
-```sql
-SELECT      *
-FROM        FIRST_HALF
-UNION
-SELECT      *
-FROM        JULY
-;
-```
-  - 15개 케이스의 `UNION 된 테이블`이 생성 되었음
-
-<br>
-
-#### 맛(FLAVOR) 별 TOTAL_ORDER 합계 출력하기
-```sql
-SELECT      *, SUM(TOTAL_ORDER) AS SUM_ORDER
-FROM        (
-            SELECT      *
-            FROM        FIRST_HALF
-            UNION
-            SELECT      *
-            FROM        JULY
-            ) AS UNION_TABLE
-GROUP BY    FLAVOR
-;
-```
-
-<br>
-
-#### 내림차순 정렬하고 상위 3개만 출력하기
-```sql
-SELECT      *, SUM(TOTAL_ORDER) AS SUM_ORDER
-FROM        (
-            SELECT      *
-            FROM        FIRST_HALF
-            UNION
-            SELECT      *
-            FROM        JULY
-            ) AS UNION_TABLE
-GROUP BY    FLAVOR
-ORDER BY    SUM_ORDER DESC
-LIMIT       3
-;
-```
-
-<br>
-
 #### 이름만 출력하기
 ```sql
-SELECT      FLAVOR
-FROM        (
-            SELECT      *, SUM(TOTAL_ORDER) AS SUM_ORDER
-            FROM        (
-                        SELECT      *
-                        FROM        FIRST_HALF
-                        UNION
-                        SELECT      *
-                        FROM        JULY
-                        ) AS UNION_TABLE
-            GROUP BY    FLAVOR
-            ORDER BY    SUM_ORDER DESC
-            LIMIT       3
-            ) AS FINAL_TABLE
+SELECT      C.CAR_ID, C.CAR_TYPE, ROUND(C.DAILY_FEE*30*(100-P.DISCOUNT_RATE)/100) AS FEE
+FROM        CAR_RENTAL_COMPANY_CAR AS C
+JOIN        CAR_RENTAL_COMPANY_RENTAL_HISTORY AS H
+    ON      C.CAR_ID=H.CAR_ID
+JOIN        CAR_RENTAL_COMPANY_DISCOUNT_PLAN AS P 
+    ON      C.CAR_TYPE=P.CAR_TYPE
+WHERE       C.CAR_ID NOT IN (
+                            SELECT CAR_ID
+                            FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+                            WHERE END_DATE > '2022-11-01' AND START_DATE < '2022-12-01'
+                            )
+    AND     P.DURATION_TYPE='30일 이상'
+GROUP BY    C.CAR_ID
+HAVING      C.CAR_TYPE IN ('세단', 'SUV')
+    AND     (FEE>=500000 AND FEE<2000000) 
+ORDER BY    FEE DESC, CAR_TYPE, CAR_ID DESC
 ;
 ```
-  - 통과🎉
-  - 다른 사람들의 풀이에서는 `JOIN에 서브쿼리`를 사용하였던데, 그것보다 이렇게 `UNION`을 사용하는 것이 더 직관적인 것 같음
-  - 출제자의 의도는 JOIN을 사용하라는 것 같은데...🤫
 
 
 
