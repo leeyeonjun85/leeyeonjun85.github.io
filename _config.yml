@@ -376,13 +376,14 @@ defaults:
     # 아래 주소에서 다운받아서 실행하여 설치
     # https://rubyinstaller.org/downloads/
   # 루비 설치 후 VSCode 의 Command Prompt 터미널
-    # gem install jekyll bundler
-    # jekyll -v 하면 루비 버전확인 가능
+
     # bundle init
     # bundle config set path 'vendor/bundle'
     # bundle add jekyll
     # bundle exec jekyll new --force --skip-bundle .
     # bundle install
+
+    # jekyll -v 하면 루비 버전확인 가능
 
   # Run jekyll Dev. Server!
     # bundle exec jekyll serve
