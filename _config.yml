@@ -370,13 +370,20 @@ defaults:
 # \quad     네칸
 # \qquad    여덟칸
 
-### Code Snippet
+
+### 컴퓨터 리셋 후 GitHub 개발서버 셋팅
   # Ruby 설치
     # 아래 주소에서 다운받아서 실행하여 설치
     # https://rubyinstaller.org/downloads/
-  # 루비 설치 후 VSCode 재시작 후 아래 명령어로 bundler 설치
-    # gem install bundler
+  # 루비 설치 후 VSCode 의 Command Prompt 터미널
+    # gem install jekyll bundler
+    # jekyll -v 하면 루비 버전확인 가능
     # bundle init
+    # bundle config set path 'vendor/bundle'
+    # bundle add jekyll
+    # bundle exec jekyll new --force --skip-bundle .
+    # bundle install
+
   # Run jekyll Dev. Server!
     # bundle exec jekyll serve
   # Dev. Sever is...
