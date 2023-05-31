@@ -1,8 +1,8 @@
 ---
 
-title: "AI 부트캠프 : SQL Challenge Day2"
+title: "AI 부트캠프 : SQL Challenge Day3"
 
-excerpt: "코드스테이츠와 함께하는 'SQL Challenge' 2일차 회고"
+excerpt: "코드스테이츠와 함께하는 'SQL Challenge' 3일차 회고"
 
 categories:
     - AIB Log
@@ -16,7 +16,7 @@ tags:
 header:
     teaser: /assets/images/aib/codestates-ci.png
 
-last_modified_at: 2023-05-30
+last_modified_at: 2023-05-31
 
 ---
 
