@@ -372,9 +372,11 @@ defaults:
 
 ### Code Snippet
   # Ruby 설치
+    # 아래 주소에서 다운받아서 실행하여 설치
     # https://rubyinstaller.org/downloads/
-  # bundler 설치
+  # 루비 설치 후 VSCode 재시작 후 아래 명령어로 bundler 설치
     # gem install bundler
+    # bundle init
   # Run jekyll Dev. Server!
     # bundle exec jekyll serve
   # Dev. Sever is...
