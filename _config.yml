@@ -371,7 +371,9 @@ defaults:
 # \qquad    여덟칸
 
 ### Code Snippet
-  # jekyll 개발서버를 사용하기 위한 번들러 설치
+  # Ruby 설치
+    # https://rubyinstaller.org/downloads/
+  # bundler 설치
     # gem install bundler
   # Run jekyll Dev. Server!
     # bundle exec jekyll serve
