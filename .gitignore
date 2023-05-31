@@ -1,40 +1,5 @@
-# Vim
-*~
-*.sw[p_]
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Ruby Gem : Bundler 가 생성한 폴더 무시
-*.gem
-.bundle
-vendor/
-Gemfile.lock
-**/vendor/bundle
-
-# Jekyll 이 생성한 메타 데이터 무시
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-
-# Node.js and NPM
-node_modules
-npm-debug.log*
-package-lock.json
-codekit-config.json
-
-# macOS
-.DS_Store
-
-# Jekyll generated files
+_site
+.sass-cache
 .jekyll-cache
 .jekyll-metadata
-.sass-cache
-_asset_bundler_cache
-_site
-
-# 작업중 파일은 파일명 뒤에 __working__를 붙여 제외하기
-*__working__.*
+vendor
