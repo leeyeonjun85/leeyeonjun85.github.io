@@ -340,7 +340,7 @@ ORDER BY    OUTS.ANIMAL_ID
 ```
   - 통과🎉
   - 레프트 아웃터 조인  
-![image](../../assets/images/etc/Visual_SQL_JOINS_V2){: .align-center width="70%"}  
+![image](../../assets/images/etc/Visual_SQL_JOINS_V2.png){: .align-center width="70%"}  
 
 
 
