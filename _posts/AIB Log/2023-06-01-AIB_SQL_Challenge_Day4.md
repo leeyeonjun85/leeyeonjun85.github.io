@@ -47,19 +47,19 @@ last_modified_at: 2023-06-01
 
 ## Daily Reflection : 3L 회고
 ### 배운 것(Learned)
-aa
+LEFT OUTER JOIN을 통하여 한 테이블에는 있지만, 다른 테이블에는 없는 데이터를 조회할 수 있다.
 {: .notice--success}
 
 <br>
 
 ### 아쉬웠던 점(Lacked)
-풀
+다양한 JOIN의 예를 연습해봐야겠다.
 {: .notice--danger}
 
 <br>
 
 ### 좋았던 점(Liked)
-S
+LEFT OUTER JOIN 을 어떠한 경우에 사용해야하는지 몰랐는데, 연습문제를 통해서 경험할 수 있어서 좋았다.
 {: .notice--warning}
 
 

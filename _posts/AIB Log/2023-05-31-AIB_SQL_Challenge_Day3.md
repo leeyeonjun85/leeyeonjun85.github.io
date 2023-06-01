@@ -47,19 +47,19 @@ last_modified_at: 2023-05-31
 
 ## Daily Reflection : 3L 회고
 ### 배운 것(Learned)
-aa
+3개 이상의 테이블을 JOIN하여 조건 검색하는 방법을 배웠다.
 {: .notice--success}
 
 <br>
 
 ### 아쉬웠던 점(Lacked)
-풀
+쿼리문이 길어지면 복잡해져서 어려워진다.
 {: .notice--danger}
 
 <br>
 
 ### 좋았던 점(Liked)
-S
+쿼리문을 논리적으로 발전시키는 연습을 한 것 같아서 좋다.
 {: .notice--warning}
 
 
@@ -427,184 +427,6 @@ ORDER BY    FEE DESC, CAR_TYPE, CAR_ID DESC
 ;
 ```
   - 통과🎉
-
-
-
-
-<br><br><br><br>
-
-
-
-
-## IS NULL : 경기도에 위치한 식품창고 목록 출력하기  
-
-### 문제 설명과 문제📜  
-
-#### 문제 설명  
-> 다음은 식품창고의 정보를 담은 `FOOD_WAREHOUSE` 테이블입니다. `FOOD_WAREHOUSE` 테이블은 다음과 같으며 `WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, TLNO, FREEZER_YN`는 창고 ID, 창고 이름, 창고 주소, 전화번호, 냉동시설 여부를 의미합니다.  
-
-| Column name	    | Type          | Nullable  |
-| :---:           | :---:         | :---:     |
-| WAREHOUSE_ID    |	VARCHAR(10)	  | FALSE     |
-| WAREHOUSE_NAME  |	VARCHAR(20)	  | FALSE     |
-| ADDRESS         |	VARCHAR(100)	| TRUE      |
-| TLNO            |	VARCHAR(20)	  | TRUE      |
-| FREEZER_YN      |	VARCHAR(1)	  | TRUE      |
-
-<br>
-
-#### 문제  
-> `FOOD_WAREHOUSE` 테이블에서 경기도에 위치한 창고의 ID, 이름, 주소, 냉동시설 여부를 조회하는 SQL문을 작성해주세요. 이때 냉동시설 여부가 NULL인 경우, 'N'으로 출력시켜 주시고 결과는 창고 ID를 기준으로 오름차순 정렬해주세요.
-
-
-<br><br>
-
-
-### 풀이🔎  
-
-#### `FOOD_WAREHOUSE` 테이블 살펴보기
-```sql
-SELECT      *
-FROM        FOOD_WAREHOUSE
-;
-```
-  - 경기도에 위치한 창고의 위치를 찾는 방법은 3가지가 있을 것 같음
-    1. `WAREHOUSE_NAME`에서 `경기`로 조회하는 방법
-    2. `ADDRESS`에서 `경기도`로 조회하는 방법
-    3. `TLNO`에서 `031`로 조회하는 방법
-  - `WAREHOUSE_NAME`에는 결측치가 없지만, `ADDRESS`, `TLNO`에는 결측치가 있을 수 있기 때문에, `WAREHOUSE_NAME`를 사용하는 것이 좋을것 같음
-
-<br>
-
-#### `WAREHOUSE_NAME`에서 `경기` 포함 조회하기
-```sql
-SELECT      *
-FROM        FOOD_WAREHOUSE
-WHERE       WAREHOUSE_NAME LIKE '%경기%'
-;
-```
-
-<br>
-
-#### 창고의 ID, 이름, 주소, 냉동시설 여부를 출력하는데, 냉동시설 여부가 NULL인 경우, 'N'으로 출력시키기
-```sql
-SELECT      WAREHOUSE_ID, WAREHOUSE_NAME,
-            ADDRESS, IF(FREEZER_YN IS NULL, 'N', FREEZER_YN)
-FROM        FOOD_WAREHOUSE
-WHERE       WAREHOUSE_NAME LIKE '%경기%'
-;
-```
-  - IF(특성 IS NULL, 결측이면 수행, 아니면 수행)
-
-<br>
-
-#### 오름차순 정렬
-```sql
-SELECT      WAREHOUSE_ID, WAREHOUSE_NAME,
-            ADDRESS, IF(FREEZER_YN IS NULL, 'N', FREEZER_YN)
-FROM        FOOD_WAREHOUSE
-WHERE       WAREHOUSE_NAME LIKE '%경기%'
-ORDER BY    WAREHOUSE_ID
-;
-```
-  - 통과🎉
-
-
-
-
-<br><br><br><br>
-
-
-
-
-## String, Date : 조건에 부합하는 중고거래 상태 조회하기  
-
-### 문제 설명과 문제📜  
-
-#### 문제 설명  
-> 다음은 중고거래 게시판 정보를 담은 `USED_GOODS_BOARD` 테이블입니다. `USED_GOODS_BOARD` 테이블은 다음과 같으며 `BOARD_ID, WRITER_ID, TITLE, CONTENTS, PRICE, CREATED_DATE, STATUS, VIEWS`은 게시글 ID, 작성자 ID, 게시글 제목, 게시글 내용, 가격, 작성일, 거래상태, 조회수를 의미합니다.
-
-| Column name	  | Type	        | Nullable  |
-| :---:         | :---:         | :---:     |
-| BOARD_ID      |	VARCHAR(5)	  | FALSE     |
-| WRITER_ID     |	VARCHAR(50)	  | FALSE     |
-| TITLE         |	VARCHAR(100)	| FALSE     |
-| CONTENTS      |	VARCHAR(1000) | FALSE     |
-| PRICE         |	NUMBER	      | FALSE     |
-| CREATED_DATE  |	DATE	        | FALSE     |
-| STATUS        |	VARCHAR(10)	  | FALSE     |
-| VIEWS         |	NUMBER	      | FALSE     |
-
-<br>
-
-#### 문제  
-> `USED_GOODS_BOARD` 테이블에서 2022년 10월 5일에 등록된 중고거래 게시물의 게시글 ID, 작성자 ID, 게시글 제목, 가격, 거래상태를 조회하는 SQL문을 작성해주세요. 거래상태가 SALE 이면 판매중, RESERVED이면 예약중, DONE이면 거래완료 분류하여 출력해주시고, 결과는 게시글 ID를 기준으로 내림차순 정렬해주세요.
-
-
-<br><br>
-
-
-### 풀이🔎  
-
-#### `USED_GOODS_BOARD` 테이블 살펴보기
-```sql
-SELECT      *
-FROM        USED_GOODS_BOARD
-;
-```
-  - `CREATED_DATE` 특성은 `DATE` 형식이기 때문에 관련 메소드 사용하여 `2022년 10월 5일에 등록` 된 중고거래 조회 가능
-
-<br>
-
-#### 2022년 10월 5일에 등록된 중고거래 조회하기
-```sql
-SELECT      *
-FROM        USED_GOODS_BOARD
-WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
-;
-```
-  - 5개 케이스 조회 됨
-
-<br>
-
-#### 게시글 ID, 작성자 ID, 게시글 제목, 가격, 거래상태거래상태가 SALE 이면 판매중, RESERVED이면 예약중, DONE이면 거래완료 분류하여 출력시키기
-```sql
-SELECT      BOARD_ID, WRITER_ID, TITLE, PRICE,
-            CASE  WHEN STATUS = 'SALE' THEN '판매중'
-                  WHEN STATUS = 'RESERVED' THEN '예약중'
-                  WHEN STATUS = 'DONE' THEN '거래완료'
-                  END STATUS
-FROM        USED_GOODS_BOARD
-WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
-;
-```
-
-<br>
-
-#### 게시글 ID를 기준으로 내림차순 정렬
-```sql
-SELECT      BOARD_ID, WRITER_ID, TITLE, PRICE,
-            CASE  WHEN STATUS = 'SALE' THEN '판매중'
-                  WHEN STATUS = 'RESERVED' THEN '예약중'
-                  WHEN STATUS = 'DONE' THEN '거래완료'
-                  END AS STATUS
-FROM        USED_GOODS_BOARD
-WHERE       DATE_FORMAT(CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
-ORDER BY    BOARD_ID DESC
-;
-```
-  - 통과🎉
-  - `CASE WHEN THEN` 이용하기
-    ```sql
-    CASE
-        WHEN 조건1 THEN 값1
-        WHEN 조건2 THEN 값2
-        WHEN 조건3 THEN 값3
-        ELSE 값4
-    END AS alias
-    ```
-
-
 
 
 
