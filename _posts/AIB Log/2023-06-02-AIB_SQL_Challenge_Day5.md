@@ -47,19 +47,19 @@ last_modified_at: 2023-06-02
 
 ## Daily Reflection : 3L 회고
 ### 배운 것(Learned)
-L
+간략한 테이블 조회부터 시작해서, 조건을 하나씩 늘려가며 쿼리문을 작성하니 논리적으로 이해하기 쉽다.
 {: .notice--success}
 
 <br>
 
 ### 아쉬웠던 점(Lacked)
-다
+조건을 추가하는 과정이 익숙해지면 더 빨라지겠지?
 {: .notice--danger}
 
 <br>
 
 ### 좋았던 점(Liked)
-L
+쿼리문작성하는데 자신감이 붙었다.
 {: .notice--warning}
 
 
