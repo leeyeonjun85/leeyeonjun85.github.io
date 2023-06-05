@@ -20,7 +20,7 @@ last_modified_at: 2022-11-02
 
 <br>
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/profile/me01.jpg){: .align-center width="40%"}
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/profile/profile_256x256.jpg){: .align-center width="40%"}
 
 <br>
 
@@ -50,19 +50,6 @@ last_modified_at: 2022-11-02
 ### 미래...
 사랑하는 가족과 함께 밝은 미래😃🌈  
 
-![image](../assets/images/profile/family01.jpg){: .align-center width="70%"}
-
-
-<br><br>
-
-
-## 저의 이력서도 한번 봐주세요😄
-
-<div style="width : 80%; margin : auto;">
-  <a href="http://leeyj85.shop/aboutme/" target="_blank">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/profile/resume.png">
-  </a>
-</div>  
 
 <br><br>
 
