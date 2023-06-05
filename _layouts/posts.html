@@ -2,6 +2,16 @@
 layout: archive
 ---
 
+{% if page.toc %}
+<aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+  <nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+    {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+  </nav>
+</aside>
+{% endif %}
+<h1>Test11</h1>
+
 {{ content }}
 
 <ul class="taxonomy__index">
@@ -28,3 +38,9 @@ layout: archive
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
+
+
+
+
+
+
