@@ -40,11 +40,12 @@
   - Ruby 설치
     - 아래 주소에서 다운받아서 실행하여 설치
     - `https://rubyinstaller.org/downloads/`
+    - jekyll은 32bit이기 때문에 (x86)으로 설치
     
   - 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
     - `ruby -v` : 루비 버전확인 가능
-    - `jekyll -v` : 지킬 버전확인 가능
     - `bundle install` : bundle 설치하기
+    - `jekyll -v` : 지킬 버전확인 가능
 
   - Run jekyll Dev. Server!
     - `bundle exec jekyll serve`
