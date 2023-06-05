@@ -306,6 +306,7 @@ defaults:
       toc: true
       toc_sticky: true
       toc_label: "MENU"
+      toc_ads: true
 
       # 기타사항
       use_math: true
