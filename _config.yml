@@ -22,8 +22,8 @@ minimal_mistakes_skin    : "air"
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
 
 
-
-
+#############################################################################
+#############################################################################
 
 
 # Site Settings
@@ -96,6 +96,11 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
+
+#############################################################################
+#############################################################################
+
+
 # Social Sharing
 twitter:
   username               :
@@ -111,6 +116,11 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+
+#############################################################################
+#############################################################################
+
+
 # Analytics
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
@@ -119,24 +129,28 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
+#############################################################################
+#############################################################################
+
+
 # Site Author
 author:
   name             : "이연준"
   avatar           : "/assets/images/profile/profile_256x256.jpg"
   bio              : >-
-    📚 날마다 공부하고 정리하기
+                    📚 날마다 공부 🧐
   location         : "Asan, South Korea"
   email            : "leeyeonjun85@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:leeyeonjun85@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:leeyeonjun85@gmail.com"
     - label: "Project Site"
       icon: "fas fa-fw fa-link"
       url: "http://leeyj85.shop/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/profile.php?id=100086062244259"
@@ -146,6 +160,11 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/leeyeonjun85/"
+
+
+#############################################################################
+#############################################################################
+
 
 # Site Footer
 footer:
@@ -168,6 +187,11 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/leeyeonjun85/"
+
+
+#############################################################################
+#############################################################################
+# ETC Site Settings
 
 
 # Reading Files
@@ -298,6 +322,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+
+#############################################################################
+#############################################################################
 
 
 # Defaults
