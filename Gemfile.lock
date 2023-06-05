@@ -16,7 +16,7 @@ GEM
     faraday-net_http (3.0.2)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.23.2-x64-mingw-ucrt)
+    google-protobuf (3.23.2-x64-unknown)
     google-protobuf (3.23.2-x86-mingw32)
     http_parser.rb (0.8.0)
     i18n (1.13.0)
@@ -79,7 +79,7 @@ GEM
     rouge (4.1.1)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
-    sass-embedded (1.62.1-x64-mingw-ucrt)
+    sass-embedded (1.62.1-x64-unknown)
       google-protobuf (~> 3.21)
     sass-embedded (1.62.1-x86-mingw32)
       google-protobuf (~> 3.21)
@@ -92,7 +92,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-unknown
   x86-mingw32
 
 DEPENDENCIES
