@@ -5,6 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+
+#############################################################################
+#############################################################################
+
+
 # Theme Settings   
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
@@ -15,6 +20,11 @@
 minimal_mistakes_skin    : "air"
 # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
+
+
+
+
+
 
 # Site Settings
 locale                   : "ko-KR"
@@ -361,43 +371,4 @@ defaults:
 #     permalink: /:collection/:path/
 
 
-
-
-# 띄어쓰기
-# (　)
-# &nbsp;
-
-# 수식띄어쓰기
-# \,        한칸
-# \;        두칸
-# \quad     네칸
-# \qquad    여덟칸
-
-
-### 컴퓨터 리셋 후 GitHub 개발서버 셋팅
-  # Ruby 설치
-    # 아래 주소에서 다운받아서 실행하여 설치
-    # https://rubyinstaller.org/downloads/
-    
-  # 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
-    # ruby -v 하면 루비 버전확인 가능
-    # jekyll -v 하면 지킬 버전확인 가능
-    # bundle install
-
-  # Run jekyll Dev. Server!
-    # bundle exec jekyll serve
-  # Dev. Sever is...
-    # http://127.0.0.1:4000
-    # To stop Press `Ctrl + C`
-
-# git add . && git commit -m "Update" && git push
-
-
-
-# {: .notice}
-# {: .notice--primary}
-# {: .notice--info}
-# {: .notice--warning}
-# {: .notice--danger}
-# {: .notice--success}
 
