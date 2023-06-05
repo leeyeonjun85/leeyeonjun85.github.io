@@ -140,11 +140,11 @@ author:
   bio              : >-
                     📚 날마다 공부 🧐
   location         : "Asan, South Korea"
-  email            : "leeyeonjun85@gmail.com"
+  email            : # "leeyeonjun85@gmail.com"
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:leeyeonjun85@gmail.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:leeyeonjun85@gmail.com"
     - label: "Project Site"
       icon: "fas fa-fw fa-link"
       url: "http://leeyj85.shop/"
@@ -169,6 +169,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:eona1301@email.com
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:

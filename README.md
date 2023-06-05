@@ -60,6 +60,20 @@
 
 <br>
 
+### 텍스트 정렬
+- `{: .text-left}`
+- `{: .text-center}`
+- `{: .text-right}`
+
+<br>
+
+### 이미지 정렬
+- `{: .align-left}`
+- `{: .align-center}`
+- `{: .align-right}`
+
+<br>
+
 ### 문단에 배경색 입히기
 - `{: .notice}`
 - `{: .notice--primary}`
