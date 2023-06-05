@@ -2,4 +2,52 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+
+<!-- Google tag (gtag.js) -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DD9F9PDL8N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DD9F9PDL8N');
+</script>
+
+
+
+<!-- Google Adsense -->
+<!-- 자동으로 모든 페이지에 광고 붙이기 - 안되는 것 같음 -->
+<script
+    async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033552355310830"
+    crossorigin="anonymous">
+</script>
+
+
+
+<!-- URL 복사 -->
+<script>
+    function CopyUrlToClipboard() {
+        var dummy = document.createElement("input");
+        var text = location.href;
+
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+
+        let selectedID = document.querySelector('.btn--primary');
+        let CreateDiv = document.createElement('div');
+        
+        CreateDiv.innerHTML = 'URL 복사 완료🔗';
+        CreateDiv.id = 'snackbar';
+        selectedID.appendChild(CreateDiv);
+        CreateDiv.className = "show";
+        
+        setTimeout(function () { CreateDiv.className = CreateDiv.className.replace("show", ""); }, 3000);
+    }
+</script>
+
+
 <!-- end custom head snippets -->
