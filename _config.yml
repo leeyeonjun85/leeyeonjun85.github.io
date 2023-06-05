@@ -122,9 +122,9 @@ analytics:
 # Site Author
 author:
   name             : "이연준"
-  avatar           : "/assets/images/profile/myprofile_02.jpg"
+  avatar           : "/assets/images/profile/profile_256x256.jpg"
   bio              : >-
-    ⛳ 목표를 향하여!!
+    📚 날마다 공부하고 정리하기
   location         : "Asan, South Korea"
   email            : "leeyeonjun85@gmail.com"
   links:
