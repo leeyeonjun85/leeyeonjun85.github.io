@@ -37,47 +37,58 @@
 <br>
 
 ### 컴퓨터 리셋 후 GitHub 개발서버 셋팅
-  - Ruby 설치
-    - 아래 주소에서 다운받아서 실행하여 설치
-    - `https://rubyinstaller.org/downloads/`
-    - jekyll은 32bit이기 때문에 (x86)으로 설치
+```bash
+# Ruby 설치
+## 아래 주소에서 다운받아서 실행하여 설치
+https://rubyinstaller.org/downloads/
+## jekyll은 32bit이기 때문에 (x86)으로 설치
     
-  - 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
-    - `ruby -v` : 루비 버전확인 가능
-    - `bundle install` : bundle 설치하기
-    - `jekyll -v` : 지킬 버전확인 가능
+# 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
+ruby -v           # 루비 버전확인 가능
+bundle install    # bundle 설치하기
+jekyll -v         # 지킬 버전확인 가능
 
-  - Run jekyll Dev. Server!
-    - `bundle exec jekyll serve`
-  - Dev. Sever is...
-    - http://127.0.0.1:4000
-    - To stop Press `Ctrl + C`
+# Run jekyll Dev. Server!
+bundle exec jekyll serve
+## Dev. Sever is...
+http://127.0.0.1:4000
+## To stop Press
+Ctrl + C
+```
 
 <br>
 
 ### 한 줄로 깃애드, 깃커밋, 깃푸시 실행하기
-- `git add . && git commit -m "Update" && git push`
+```bash
+git add . && git commit -m "Update" && git push
+```
 
 <br>
 
 ### 텍스트 정렬
-- `{: .text-left}`
-- `{: .text-center}`
-- `{: .text-right}`
+```md
+{: .text-left}
+{: .text-center}
+{: .text-right}
+```
 
 <br>
 
 ### 이미지 정렬
-- `{: .align-left}`
-- `{: .align-center}`
-- `{: .align-right}`
+```md
+{: .align-left}
+{: .align-center}
+{: .align-right}
+```
 
 <br>
 
 ### 문단에 배경색 입히기
-- `{: .notice}`
-- `{: .notice--primary}`
-- `{: .notice--info}`
-- `{: .notice--warning}`
-- `{: .notice--danger}`
-- `{: .notice--success}`
+```md
+{: .notice}
+{: .notice--primary}
+{: .notice--info}
+{: .notice--warning}
+{: .notice--danger}
+{: .notice--success}
+```
