@@ -42,6 +42,7 @@
 ## 아래 주소에서 다운받아서 실행하여 설치
 https://rubyinstaller.org/downloads/
 ## jekyll은 32bit이기 때문에 (x86)으로 설치
+# rubyinstaller-devkit-2.7.8-1-x86.exe
     
 # 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
 ruby -v           # 루비 버전확인 가능
@@ -54,6 +55,10 @@ bundle exec jekyll serve
 http://127.0.0.1:4000
 ## To stop Press
 Ctrl + C
+
+
+# 에러나면... Ruby gem 설치 환경 확인
+gem env
 ```
 
 <br>
