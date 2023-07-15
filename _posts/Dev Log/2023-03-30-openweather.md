@@ -38,10 +38,10 @@ last_modified_at: 2023-03-30
 
 ## 완성된 '나만의 날씨정보 어플'
 
-- ['나만의 날씨정보 어플' 바로가기](http://leeyj85.shop/etc/openweather/){:target="_blank"}  
+- ['나만의 날씨정보 어플' 바로가기](http://54.180.116.56/etc/openweather/){:target="_blank"}  
 
 <div style="width : 80%; margin : auto;">
-  <a href="http://leeyj85.shop/etc/openweather/" target="_blank">
+  <a href="http://54.180.116.56/etc/openweather/" target="_blank">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213332.png">
   </a>
 </div>  
