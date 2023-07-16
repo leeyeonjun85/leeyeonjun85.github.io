@@ -1,5 +1,5 @@
 ---
-title: "Entity Framework Core : First Application"
+title: "C# Entity Framework Core : First Application"
 excerpt: "SQLite를 활용한 EFCore 시작하기"
 
 categories:
