@@ -18,8 +18,23 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
+
+<!-- 구글광고_디스플레이_수평형 -->
+<div style="text-align: center;">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033552355310830" crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3033552355310830"
+      data-ad-slot="7972222036"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
     <div class="initial-content">
       {{ content }}
@@ -31,20 +46,6 @@
       </div>
     {% endif %}
 
-    <!-- 구글광고_디스플레이_수평형 -->
-    <!-- <div style="text-align: center;">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3033552355310830" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-3033552355310830"
-          data-ad-slot="7972222036"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div> -->
-
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
@@ -53,6 +54,6 @@
     </div>
 
     {% include scripts.html %}
-  
+
   </body>
 </html>
