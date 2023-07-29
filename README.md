@@ -46,11 +46,11 @@ https://rubyinstaller.org/downloads/
     
 # 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
 ruby -v           # 루비 버전확인 가능
-bundle install    # bundle 설치하기
+bundle install    # bundle 설치하기 / CMD 터미널에서 실행해야 함
 jekyll -v         # 지킬 버전확인 가능
 
 # Run jekyll Dev. Server!
-bundle exec jekyll serve
+bundle exec jekyll serve  # CMD 터미널에서 실행해야 함
 ## Dev. Sever is...
 http://127.0.0.1:4000
 ## To stop Press
