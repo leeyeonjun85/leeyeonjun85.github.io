@@ -20,7 +20,8 @@ last_modified_at: 2022-11-02
 
 <br>
 
-![image](https://drive.google.com/uc?id=1oOoeMltD6g4W4mtx--Hrua5nGjm_dWWe){: .align-center width="80%"}
+<!-- ![image](https://drive.google.com/uc?id=1oOoeMltD6g4W4mtx--Hrua5nGjm_dWWe){: .align-center width="80%"} -->
+![image](../../assets/images/profile/ShineTree.JPG){: .align-center width="70%"}   
 
 <br>
 
@@ -36,18 +37,18 @@ last_modified_at: 2022-11-02
 '[오투공부방](http://leeyj85.shop/o2study/)'을 아내와 함께 운영📚  
 
 <div style="width : 80%; margin : auto;">
-  <a href="http://leeyj85.shop/o2study/" target="_blank">
+  <a href="http://15.164.244.197/o2study/" target="_blank">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/profile/o2study.jpg">
   </a>
 </div>  
 
-- 2023년 AI Model 개발자로 이직 📊💻  
+- 2023년 AI Model Developer로 이직 📊💻  
 
 <br>
 
 ### 미래...
 사랑하는 가족과 함께 밝은 미래😃🌈  
-![image](https://drive.google.com/uc?id=1snacwDITxTbLxt1RiBb0GMFKT-LKW8yl){: .align-center width="90%"}
+![image](../../assets/images/profile/family1.JPG){: .align-center width="90%"}  
 
 <br><br>
 
