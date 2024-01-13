@@ -34,7 +34,9 @@
   - `\quad`  : 네칸
   - `\qquad` : 여덟칸
 
+<hr><hr>
 <br>
+<hr><hr>
 
 ### 컴퓨터 리셋 후 GitHub 개발서버 셋팅
 ```bash
