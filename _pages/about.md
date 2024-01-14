@@ -21,7 +21,7 @@ last_modified_at: 2022-11-02
 <br>
 
 <!-- ![image](https://drive.google.com/uc?id=1oOoeMltD6g4W4mtx--Hrua5nGjm_dWWe){: .align-center width="80%"} -->
-![image](../../assets/images/profile/ShineTree.JPG){: .align-center width="70%"}   
+![image](../../assets/images/profile/ShineTree.JPG){: .align-center width="50%"}   
 
 <br>
 
