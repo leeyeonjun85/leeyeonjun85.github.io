@@ -65,14 +65,14 @@ last_modified_at: 2024-01-21
 <br>
 
 ### MSI 노트북에 MSSQL 설치하기
-- 대부분의 DB 서비스에는 개발자들을 위하여 로컬환경에 DB를 설치할 수 있는 서비스를 제공함
+- 대부분의 DB 서비스 제공업체는 개발자들을 위하여 로컬환경에 DB를 설치할 수 있는 서비스를 제공함
   - MSSQL Server Developer Edition, Oracle XE, MySQL Community 등
 - 이번에는 MSSQL Server 2022 Developer Edition을 설치하기로 함
   - [공식 MS Server 페이지](https://www.microsoft.com/ko-kr/sql-server/sql-server-downloads)에서 개발자를 위한 Developer Edition 을 다운로드하여 설치
 - Basic으로 선택하여 기본설정으로 설치
 - SSMS(SQL Server Management Studio) 설치 : Install SSMS
-- SSMS Windows Authentication 으로 접속
-- 사용할 DB 생성
+- SSMS 에서 Windows Authentication 으로 접속
+- MSSQL에서 사용할 테스트용 DB 생성
 - 사용자 생성하여 DB에 연결
 
 <br>
