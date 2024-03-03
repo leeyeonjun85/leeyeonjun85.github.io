@@ -13,35 +13,52 @@ namespace SecurityRSA
 {
   public partial class Main : Form
   {
-    public Main()
-    {
-        InitializeComponent();
-    }
-
     string encodedString = string.Empty;
     string decodedString = string.Empty;
     string privateKeyText = string.Empty;
     string publicKeyText = string.Empty;
 
-    private void btnRun_Click(object sender, EventArgs e)
+    public Main()
     {
-      SecuWork();
-
-      tbxMessage.Text = $"■ RSA 암호화 성공";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ 입력 텍스트";
-      tbxMessage.Text += $"{Environment.NewLine}{tbxInput.Text}";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ 암호화 텍스트";
-      tbxMessage.Text += $"{Environment.NewLine}{encodedString}";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ 복호화 텍스트";
-      tbxMessage.Text += $"{Environment.NewLine}{decodedString}";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ 공개키";
-      tbxMessage.Text += $"{Environment.NewLine}{publicKeyText}";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ 개인키";
-      tbxMessage.Text += $"{Environment.NewLine}{privateKeyText}";
+        InitializeComponent();
     }
-    private void SecuWork()
+
+
+    private void btnGetKeys_Click(object sender, EventArgs e)
     {
-      // 암호화 개체 생성
+      (privateKeyText, publicKeyText) = GenerateKey();
+
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■■■■ RSA 비대칭 Key 생성 성공 ■■■■";
+      tbxMessage.Text += $"{Environment.NewLine}   ■ Private Key";
+      tbxMessage.Text += $"{Environment.NewLine}{privateKeyText}";
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■ Public Key";
+      tbxMessage.Text += $"{Environment.NewLine}{publicKeyText}";
+    }
+
+    private void btnEncrypt_Click(object sender, EventArgs e)
+    {
+      encodedString = RSAEncrypt(tbxNomalText.Text, tbxPublicKey.Text);
+
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■■■■ RSA 암호화 성공 ■■■■";
+      tbxMessage.Text += $"{Environment.NewLine}   ■ Nomal Text";
+      tbxMessage.Text += $"{Environment.NewLine}{tbxNomalText.Text}";
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■ Encrypt Text";
+      tbxMessage.Text += $"{Environment.NewLine}{encodedString}";
+    }
+
+    private void btnDecrypt_Click(object sender, EventArgs e)
+    {
+      decodedString = RSADecrypt(tbxEncryptText.Text, tbxPrivateKey.Text);
+
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■■■■ RSA 복호화 성공 ■■■■";
+      tbxMessage.Text += $"{Environment.NewLine}   ■ Encrypted Text 텍스트";
+      tbxMessage.Text += $"{Environment.NewLine}{tbxEncryptText.Text}";
+      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■ Decrypt Text";
+      tbxMessage.Text += $"{Environment.NewLine}{decodedString}";
+    }
+
+    private (string privateKeyText, string publicKeyText) GenerateKey()
+    {
       RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
 
       // 개인키 생성(복호화용)
@@ -58,31 +75,29 @@ namespace SecurityRSA
       rsa.ImportParameters(publicKey);
       publicKeyText = rsa.ToXmlString(false);
 
-      encodedString = RSAEncrypt(tbxInput.Text, publicKeyText);
-      decodedString = RSADecrypt(encodedString, privateKeyText);
+      return (privateKeyText, publicKeyText);
     }
 
-    private string RSAEncrypt(string getValue, string pubKey)
+    private string RSAEncrypt(string stringToEncrypt, string publicKey)
     {
       RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
-      rsa.FromXmlString(pubKey);
+      rsa.FromXmlString(publicKey);
 
-      byte[] inbuf = (new UTF8Encoding()).GetBytes(getValue);
-      byte[] encbuf = rsa.Encrypt(inbuf, false);
+      byte[] inputArray = (new UTF8Encoding()).GetBytes(stringToEncrypt);
+      byte[] encryptedArray = rsa.Encrypt(inputArray, false);
 
-      return System.Convert.ToBase64String(encbuf);
+      return Convert.ToBase64String(encryptedArray);
     }
 
-    private string RSADecrypt(string getValue, string priKey)
+    private string RSADecrypt(string stringToDecrypt, string privateKey)
     {
       RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
-      rsa.FromXmlString(priKey);
+      rsa.FromXmlString(privateKey);
 
-      byte[] srcbuf = System.Convert.FromBase64String(getValue);
-      byte[] decbuf = rsa.Decrypt(srcbuf, false);
+      byte[] inputArray = Convert.FromBase64String(stringToDecrypt);
+      byte[] decryptedArray = rsa.Decrypt(inputArray, false);
 
-      string sDec = (new UTF8Encoding()).GetString(decbuf, 0, decbuf.Length);
-      return sDec;
+      return (new UTF8Encoding()).GetString(decryptedArray, 0, decryptedArray.Length);
     }
   }
 }

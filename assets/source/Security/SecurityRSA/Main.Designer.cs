@@ -1,4 +1,4 @@
-﻿
+
 namespace SecurityRSA
 {
     partial class Main
@@ -30,88 +30,200 @@ namespace SecurityRSA
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbxInput = new System.Windows.Forms.TextBox();
             this.tbxMessage = new System.Windows.Forms.TextBox();
-            this.btnRun = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnDecrypt = new System.Windows.Forms.Button();
+            this.btnEncrypt = new System.Windows.Forms.Button();
+            this.btnGetKeys = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbNomalText = new System.Windows.Forms.Label();
+            this.tbxNomalText = new System.Windows.Forms.TextBox();
+            this.lbPrivateKey = new System.Windows.Forms.Label();
+            this.tbxPrivateKey = new System.Windows.Forms.TextBox();
+            this.tbxEncryptText = new System.Windows.Forms.TextBox();
+            this.lbEncryptText = new System.Windows.Forms.Label();
+            this.lbPublicKey = new System.Windows.Forms.Label();
+            this.tbxPublicKey = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.625F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.375F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel1.Controls.Add(this.btnDecrypt, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbxInput, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tbxMessage, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnRun, 1, 0);
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.tbxMessage, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnDecrypt, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnEncrypt, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnGetKeys, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("굴림", 10F);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // tbxInput
-            // 
-            this.tbxInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbxInput.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tbxInput.Location = new System.Drawing.Point(3, 3);
-            this.tbxInput.Multiline = true;
-            this.tbxInput.Name = "tbxInput";
-            this.tbxInput.Size = new System.Drawing.Size(344, 39);
-            this.tbxInput.TabIndex = 0;
             // 
             // tbxMessage
             // 
             this.tbxMessage.BackColor = System.Drawing.SystemColors.Info;
             this.tableLayoutPanel1.SetColumnSpan(this.tbxMessage, 2);
             this.tbxMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbxMessage.Location = new System.Drawing.Point(3, 48);
+            this.tbxMessage.Location = new System.Drawing.Point(3, 138);
             this.tbxMessage.Multiline = true;
             this.tbxMessage.Name = "tbxMessage";
-            this.tbxMessage.Size = new System.Drawing.Size(496, 399);
-            this.tbxMessage.TabIndex = 1;
+            this.tbxMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxMessage.Size = new System.Drawing.Size(794, 309);
+            this.tbxMessage.TabIndex = 5;
             this.tbxMessage.Text = "■ Input Text and Run~!";
-            // 
-            // btnRun
-            // 
-            this.btnRun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRun.Location = new System.Drawing.Point(353, 3);
-            this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(146, 39);
-            this.btnRun.TabIndex = 2;
-            this.btnRun.Text = "Run~!";
-            this.btnRun.UseVisualStyleBackColor = true;
-            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(505, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 39);
-            this.textBox1.TabIndex = 3;
             // 
             // btnDecrypt
             // 
             this.btnDecrypt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDecrypt.Location = new System.Drawing.Point(719, 3);
+            this.btnDecrypt.Location = new System.Drawing.Point(657, 93);
             this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(78, 39);
+            this.btnDecrypt.Size = new System.Drawing.Size(140, 39);
             this.btnDecrypt.TabIndex = 4;
-            this.btnDecrypt.Text = "Run~!";
+            this.btnDecrypt.Text = "Decrypt";
             this.btnDecrypt.UseVisualStyleBackColor = true;
+            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
+            // 
+            // btnEncrypt
+            // 
+            this.btnEncrypt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEncrypt.Location = new System.Drawing.Point(657, 48);
+            this.btnEncrypt.Name = "btnEncrypt";
+            this.btnEncrypt.Size = new System.Drawing.Size(140, 39);
+            this.btnEncrypt.TabIndex = 2;
+            this.btnEncrypt.Text = "Encrypt";
+            this.btnEncrypt.UseVisualStyleBackColor = true;
+            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
+            // 
+            // btnGetKeys
+            // 
+            this.btnGetKeys.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGetKeys.Location = new System.Drawing.Point(657, 3);
+            this.btnGetKeys.Name = "btnGetKeys";
+            this.btnGetKeys.Size = new System.Drawing.Size(140, 39);
+            this.btnGetKeys.TabIndex = 7;
+            this.btnGetKeys.Text = "Get Keys";
+            this.btnGetKeys.UseVisualStyleBackColor = true;
+            this.btnGetKeys.Click += new System.EventHandler(this.btnGetKeys_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.LavenderBlush;
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.Controls.Add(this.lbNomalText, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbxNomalText, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbPrivateKey, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tbxPrivateKey, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tbxEncryptText, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbEncryptText, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbPublicKey, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tbxPublicKey, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 3);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(648, 129);
+            this.tableLayoutPanel2.TabIndex = 11;
+            // 
+            // lbNomalText
+            // 
+            this.lbNomalText.AutoSize = true;
+            this.lbNomalText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbNomalText.Location = new System.Drawing.Point(3, 0);
+            this.lbNomalText.Name = "lbNomalText";
+            this.lbNomalText.Size = new System.Drawing.Size(123, 32);
+            this.lbNomalText.TabIndex = 8;
+            this.lbNomalText.Text = "Nomal Text";
+            this.lbNomalText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbxNomalText
+            // 
+            this.tbxNomalText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbxNomalText.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbxNomalText.Location = new System.Drawing.Point(132, 3);
+            this.tbxNomalText.Multiline = true;
+            this.tbxNomalText.Name = "tbxNomalText";
+            this.tbxNomalText.Size = new System.Drawing.Size(513, 26);
+            this.tbxNomalText.TabIndex = 0;
+            // 
+            // lbPrivateKey
+            // 
+            this.lbPrivateKey.AutoSize = true;
+            this.lbPrivateKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbPrivateKey.Location = new System.Drawing.Point(3, 96);
+            this.lbPrivateKey.Name = "lbPrivateKey";
+            this.lbPrivateKey.Size = new System.Drawing.Size(123, 33);
+            this.lbPrivateKey.TabIndex = 10;
+            this.lbPrivateKey.Text = "Private Key";
+            this.lbPrivateKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbxPrivateKey
+            // 
+            this.tbxPrivateKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbxPrivateKey.Location = new System.Drawing.Point(132, 99);
+            this.tbxPrivateKey.Multiline = true;
+            this.tbxPrivateKey.Name = "tbxPrivateKey";
+            this.tbxPrivateKey.Size = new System.Drawing.Size(513, 27);
+            this.tbxPrivateKey.TabIndex = 6;
+            // 
+            // tbxEncryptText
+            // 
+            this.tbxEncryptText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbxEncryptText.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tbxEncryptText.Location = new System.Drawing.Point(132, 67);
+            this.tbxEncryptText.Multiline = true;
+            this.tbxEncryptText.Name = "tbxEncryptText";
+            this.tbxEncryptText.Size = new System.Drawing.Size(513, 26);
+            this.tbxEncryptText.TabIndex = 3;
+            // 
+            // lbEncryptText
+            // 
+            this.lbEncryptText.AutoSize = true;
+            this.lbEncryptText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEncryptText.Location = new System.Drawing.Point(3, 64);
+            this.lbEncryptText.Name = "lbEncryptText";
+            this.lbEncryptText.Size = new System.Drawing.Size(123, 32);
+            this.lbEncryptText.TabIndex = 9;
+            this.lbEncryptText.Text = "Encrypt Text";
+            this.lbEncryptText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbPublicKey
+            // 
+            this.lbPublicKey.AutoSize = true;
+            this.lbPublicKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbPublicKey.Location = new System.Drawing.Point(3, 32);
+            this.lbPublicKey.Name = "lbPublicKey";
+            this.lbPublicKey.Size = new System.Drawing.Size(123, 32);
+            this.lbPublicKey.TabIndex = 11;
+            this.lbPublicKey.Text = "Public Key";
+            this.lbPublicKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbxPublicKey
+            // 
+            this.tbxPublicKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbxPublicKey.Location = new System.Drawing.Point(132, 35);
+            this.tbxPublicKey.Multiline = true;
+            this.tbxPublicKey.Name = "tbxPublicKey";
+            this.tbxPublicKey.Size = new System.Drawing.Size(513, 26);
+            this.tbxPublicKey.TabIndex = 12;
             // 
             // Main
             // 
@@ -123,6 +235,8 @@ namespace SecurityRSA
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -130,11 +244,19 @@ namespace SecurityRSA
     #endregion
 
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-    private System.Windows.Forms.TextBox tbxInput;
+    private System.Windows.Forms.TextBox tbxNomalText;
+    private System.Windows.Forms.TextBox tbxEncryptText;
     private System.Windows.Forms.TextBox tbxMessage;
-    private System.Windows.Forms.Button btnRun;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox tbxPrivateKey;
+    private System.Windows.Forms.Label lbPrivateKey;
+    private System.Windows.Forms.Label lbEncryptText;
+    private System.Windows.Forms.Label lbNomalText;
     private System.Windows.Forms.Button btnDecrypt;
+    private System.Windows.Forms.Button btnEncrypt;
+    private System.Windows.Forms.Button btnGetKeys;
+    private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+    private System.Windows.Forms.Label lbPublicKey;
+    private System.Windows.Forms.TextBox tbxPublicKey;
   }
 }
 
