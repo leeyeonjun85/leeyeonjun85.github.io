@@ -23,17 +23,23 @@ namespace SecurityRSA
         InitializeComponent();
     }
 
-
-    private void btnGetKeys_Click(object sender, EventArgs e)
+    private void btnGetPublicKey_Click(object sender, EventArgs e)
     {
-      (privateKeyText, publicKeyText) = GenerateKey();
 
-      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■■■■ RSA 비대칭 Key 생성 성공 ■■■■";
-      tbxMessage.Text += $"{Environment.NewLine}   ■ Private Key";
-      tbxMessage.Text += $"{Environment.NewLine}{privateKeyText}";
-      tbxMessage.Text += $"{Environment.NewLine}{Environment.NewLine}   ■ Public Key";
-      tbxMessage.Text += $"{Environment.NewLine}{publicKeyText}";
     }
+
+
+    private void btnGetPublicKey_Click_1(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnGetPrivateKey_Click(object sender, EventArgs e)
+    {
+
+    }
+
+
 
     private void btnEncrypt_Click(object sender, EventArgs e)
     {
@@ -99,5 +105,6 @@ namespace SecurityRSA
 
       return (new UTF8Encoding()).GetString(decryptedArray, 0, decryptedArray.Length);
     }
+
   }
 }

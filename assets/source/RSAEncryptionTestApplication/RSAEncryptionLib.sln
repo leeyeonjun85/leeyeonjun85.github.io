@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAEncryptionLib", "RSAEncryptionLib\RSAEncryptionLib.csproj", "{9D83AC2C-B030-47C6-A000-938D0DF29B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAEncryptionTester", "RSAEncryptionTester\RSAEncryptionTester.csproj", "{1544B9BD-56B4-43B1-9392-B78C5DB5750C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D83AC2C-B030-47C6-A000-938D0DF29B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D83AC2C-B030-47C6-A000-938D0DF29B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D83AC2C-B030-47C6-A000-938D0DF29B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D83AC2C-B030-47C6-A000-938D0DF29B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1544B9BD-56B4-43B1-9392-B78C5DB5750C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1544B9BD-56B4-43B1-9392-B78C5DB5750C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1544B9BD-56B4-43B1-9392-B78C5DB5750C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1544B9BD-56B4-43B1-9392-B78C5DB5750C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F1F4DEE-C247-4B67-812E-366D003AA1DC}
+	EndGlobalSection
+EndGlobal
