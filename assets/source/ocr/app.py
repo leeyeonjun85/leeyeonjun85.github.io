@@ -5,6 +5,8 @@ from PIL import Image
 import matplotlib.pyplot as plt
 from paddleocr import PaddleOCR, draw_ocr
 import io
+import datetime as dt
+import base64
 
 app = Flask(__name__)
 api = Api(app)
@@ -13,58 +15,62 @@ api = Api(app)
 @api.route('/TestOCR')
 class TestOCR(Resource):
     def post(self):
+        # 디버깅모드 = 1
+        debugMode = 0
         
-        
-        # print("✅✅1")
+        if debugMode:
+            print(f"✅✅ {dt.datetime.now():%Y-%m-%d %H:%M:%S} : 시작 ✅✅")
         # image_data = request.data
-        print("✅✅2")
         image_data = request.files['image1']
-        print("✅✅3")
-        print(image_data)
-        print("✅✅4")
-        print(image_data.stream)
-        print("✅✅5")
+        if debugMode:
+            print(f"✅✅ {dt.datetime.now():%Y-%m-%d %H:%M:%S} : 파일 ✅✅")
         image1 = Image.open(image_data.stream).convert('RGB')
+        
+        # 이미지 확인용
         # imgplot = plt.imshow(image1)
         # plt.show()
-        # print("✅✅6")  
+
+        # 이미지를 배열로 변환
         buffer = io.BytesIO()
         image1.save(buffer, format='png', quality=100)
         byteArray = buffer.getvalue()
-           
+        if debugMode:
+            print(f"✅✅ {dt.datetime.now():%Y-%m-%d %H:%M:%S} : 이미지 배열 변환 ✅✅")
+            
+        # OCR
         ocr = PaddleOCR(use_angle_cls=True, lang='en')
-        print("✅✅7")
         result = ocr.ocr(byteArray, cls=True)
-        print("✅✅8")
+        if debugMode:
+            print(f"✅✅ {dt.datetime.now():%Y-%m-%d %H:%M:%S} : OCR완료 ✅✅")
         
-        # for idx in range(len(result)):
-        #     res = result[idx]
-        #     for line in res:
-        #         print(line)
-        #         resultList.append(line)
+        # 각종 데이터 저장
+        result0 = result[0]
+        boxes = [line[0] for line in result0]
+        txts = [line[1][0] for line in result0]
+        scores = [line[1][1] for line in result0]
+        ocr_img_array = draw_ocr(image1, boxes, txts, scores, font_path='./doc/fonts/latin.ttf')
+        ocr_img = Image.fromarray(ocr_img_array)
+        
+        # OCR된 이미지를 반환하기 위하여 utf-8 인코딩
+        buffer = io.BytesIO()
+        ocr_img.save(buffer, format='png', quality=100)
+        encoded_string = base64.b64encode(buffer.getvalue()).decode('utf-8')
+        
+        # OCR된 이미지 확인용
+        # imgplot = plt.imshow(ocr_img)
+        # plt.show()
+        if debugMode:
+            print(f"✅✅ {dt.datetime.now():%Y-%m-%d %H:%M:%S} : OCR이미지 확인 ✅✅")
 
-        # result0 = result[0]
-        # print("✅1")
-        # boxes = [line[0] for line in result0]
-        # print("✅2")
-        # txts = [line[1][0] for line in result0]
-        # print("✅3")
-        # scores = [line[1][1] for line in result0]
-        # print("✅4")
-        # # im_show = draw_ocr(img, boxes, txts, scores, font_path='./doc/fonts/latin.ttf')
-        # print("✅5")
-        # # im_show_image = Image.fromarray(im_show)
-        # print("✅6")
 
-        # # todos[idx] = request.json.get('data')
-        # return {
-        #     'result' : result,
-        #     'resultList': resultList,
-        #     'result0':result0,
-        #     'boxes':boxes,
-        #     'txts':txts,
-        #     'scores':scores
-        # }
+        return jsonify({
+                'result' : result,
+                'result0':result0,
+                'boxes':boxes,
+                'txts':txts,
+                'scores':scores,
+                'ocrEncodedString':encoded_string
+            })
 
 
 
@@ -113,4 +119,4 @@ class TodoSimple(Resource):
         }
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=80)
+    app.run(debug=True, host='127.0.0.1', port=6714)

@@ -28,87 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnOCR = new System.Windows.Forms.Button();
+            this.tbxLog = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pbxImage = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnOpenFileDialog = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lbStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.progressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOCR
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 76);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOCR.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnOCR, 2);
+            this.btnOCR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOCR.Location = new System.Drawing.Point(5, 48);
+            this.btnOCR.Margin = new System.Windows.Forms.Padding(5);
+            this.btnOCR.Name = "btnOCR";
+            this.btnOCR.Size = new System.Drawing.Size(290, 33);
+            this.btnOCR.TabIndex = 2;
+            this.btnOCR.Text = "Run OCR!!";
+            this.btnOCR.UseVisualStyleBackColor = false;
+            this.btnOCR.Click += new System.EventHandler(this.BtnOCR_Click);
             // 
-            // button2
+            // tbxLog
             // 
-            this.button2.Location = new System.Drawing.Point(12, 94);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 76);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.tbxLog.BackColor = System.Drawing.SystemColors.Info;
+            this.tableLayoutPanel1.SetColumnSpan(this.tbxLog, 2);
+            this.tbxLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbxLog.Location = new System.Drawing.Point(5, 91);
+            this.tbxLog.Margin = new System.Windows.Forms.Padding(5);
+            this.tbxLog.Multiline = true;
+            this.tbxLog.Name = "tbxLog";
+            this.tbxLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tbxLog.Size = new System.Drawing.Size(290, 334);
+            this.tbxLog.TabIndex = 4;
             // 
-            // button3
+            // tableLayoutPanel1
             // 
-            this.button3.Location = new System.Drawing.Point(12, 176);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 76);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.btnOCR, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pbxImage, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbxLog, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBox2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnOpenFileDialog, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.statusStrip1, 0, 3);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.TabIndex = 7;
             // 
-            // button4
+            // pbxImage
             // 
-            this.button4.Location = new System.Drawing.Point(12, 258);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 76);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.pbxImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbxImage.Location = new System.Drawing.Point(303, 3);
+            this.pbxImage.Name = "pbxImage";
+            this.tableLayoutPanel1.SetRowSpan(this.pbxImage, 3);
+            this.pbxImage.Size = new System.Drawing.Size(494, 424);
+            this.pbxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbxImage.TabIndex = 6;
+            this.pbxImage.TabStop = false;
             // 
-            // textBox1
+            // textBox2
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(134, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(654, 426);
-            this.textBox1.TabIndex = 4;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(10, 10);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(230, 21);
+            this.textBox2.TabIndex = 7;
+            // 
+            // btnOpenFileDialog
+            // 
+            this.btnOpenFileDialog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOpenFileDialog.Location = new System.Drawing.Point(260, 10);
+            this.btnOpenFileDialog.Margin = new System.Windows.Forms.Padding(10);
+            this.btnOpenFileDialog.Name = "btnOpenFileDialog";
+            this.btnOpenFileDialog.Size = new System.Drawing.Size(30, 23);
+            this.btnOpenFileDialog.TabIndex = 8;
+            this.btnOpenFileDialog.Text = "...";
+            this.btnOpenFileDialog.UseVisualStyleBackColor = true;
+            this.btnOpenFileDialog.Click += new System.EventHandler(this.BtnOpenFileDialog_Click);
+            // 
+            // statusStrip1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.statusStrip1, 3);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbStatus,
+            this.progressBar1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 430);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 20);
+            this.statusStrip1.TabIndex = 9;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lbStatus
+            // 
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(83, 15);
+            this.lbStatus.Text = "Status : Ready";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(150, 14);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar1.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
     #endregion
-
-    private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.Button button2;
-    private System.Windows.Forms.Button button3;
-    private System.Windows.Forms.Button button4;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.Button btnOCR;
+    private System.Windows.Forms.TextBox tbxLog;
+    private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+    private System.Windows.Forms.PictureBox pbxImage;
+    private System.Windows.Forms.TextBox textBox2;
+    private System.Windows.Forms.Button btnOpenFileDialog;
+    private System.Windows.Forms.StatusStrip statusStrip1;
+    private System.Windows.Forms.ToolStripProgressBar progressBar1;
+    private System.Windows.Forms.ToolStripStatusLabel lbStatus;
   }
 }
 

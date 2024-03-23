@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices.ComTypes;
 using System.Security.Policy;
 using System.Text;
@@ -19,13 +21,80 @@ namespace ocrTest
 {
   public partial class Form1 : Form
   {
-    readonly string _imagePath = @"D:\leeyeonjun\leeyeonjun85.github.io\assets\source\ocr\invoice-template-en-band-blue-750px.png";
-    readonly string _hostUrl = @"http://localhost/TestOCR";
+    string _imagePath = @"D:\leeyeonjun\leeyeonjun85.github.io\assets\source\ocr\invoice-template-en-band-blue-750px.png";
+    string _hostUrl = @"http://127.0.0.1:6714/TestOCR";
 
     public Form1()
     {
       InitializeComponent();    
     }
+
+    private async void BtnOCR_Click(object sender, EventArgs e)
+    {
+
+      await Task.Run(() =>
+      {
+        try
+        {
+          this.BeginInvoke(new Action(() =>
+          {
+            lbStatus.Text = $"Status : OCR 작업중......";
+            progressBar1.Visible = true;
+          }));
+          _imagePath = textBox2.Text;
+
+          // Read file data
+          FileStream fs = new FileStream(_imagePath, FileMode.Open, FileAccess.Read);
+          byte[] data = new byte[fs.Length];
+          fs.Read(data, 0, data.Length);
+          fs.Close();
+
+          // Generate post objects
+          Dictionary<string, object> postParameters = new Dictionary<string, object>();
+          postParameters.Add("filename", "image1.png");
+          postParameters.Add("fileformat", "png");
+          postParameters.Add("image1", new RequestManager.FileParameter(data, "image1.png", "image/png"));
+
+          // Create request and receive response
+          string postURL = _hostUrl;
+          string userAgent = "Someone";
+          HttpWebResponse webResponse = RequestManager.MultipartFormDataPost(postURL, userAgent, postParameters);
+
+          // Process response
+          StreamReader responseReader = new StreamReader(webResponse.GetResponseStream());
+          string fullResponse = responseReader.ReadToEnd();
+          webResponse.Close();
+
+          JObject ret = JObject.Parse(fullResponse);
+          string ocrByteString = (string)ret["ocrEncodedString"];
+          byte[] imageBytes = Convert.FromBase64String(ocrByteString);
+
+          this.BeginInvoke(new Action(() =>
+          {
+            for (int i = 0; i < ret["scores"].Count(); i++)
+            {
+              tbxLog.Text += $"{ret["txts"][i]} : {ret["scores"][i]}{Environment.NewLine}";
+            }
+            pbxImage.Image = Image.FromStream(new MemoryStream(imageBytes));
+            Application.DoEvents();
+          }));
+        }
+        catch (Exception ex)
+        {
+          MessageBox.Show("오류 발생: " + ex.Message);
+        }
+        finally
+        {
+          this.BeginInvoke(new Action(() =>
+          {
+            progressBar1.Visible = false;
+            lbStatus.Text = $"Status : Ready";
+          }));
+        }
+      });
+      
+    }
+
 
     private void button1_Click(object sender, EventArgs e)
     {
@@ -61,7 +130,6 @@ namespace ocrTest
             // 응답 출력
             string responseString = System.Text.Encoding.UTF8.GetString(responseBytes);
             Console.WriteLine(responseString);
-             
           }
         }
       }
@@ -83,7 +151,7 @@ namespace ocrTest
             { "image1", new FormFile()
               {
                 Name = "image1.png",
-                ContentType = "application/png",
+                ContentType = "image/png",
                 FilePath = _imagePath
               }
             }
@@ -95,10 +163,7 @@ namespace ocrTest
       }
     }
 
-    private async void button3_Click(object sender, EventArgs e)
-    {
-
-    }
+    
 
     /// <summary>
     /// octet-stream 방식으로 POST 하기
@@ -116,7 +181,7 @@ namespace ocrTest
         // HttpWebRequest 생성
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_hostUrl);
         request.Method = "POST";
-        request.ContentType = "application/octet-stream"; // 이미지 파일의 MIME 타입에 맞게 수정
+        request.ContentType = "application/octet-stream";
 
         // 이미지 바이트 배열을 요청 본문에 쓰기
         using (Stream requestStream = request.GetRequestStream())
@@ -149,7 +214,7 @@ namespace ocrTest
               string key1 = item.Key;
               JToken key2 = item.Value;
 
-              textBox1.Text += $"{key2}";
+              tbxLog.Text += $"{key2}";
               //foreach (JToken item1 in key2)
               //{
               //  textBox1.Text += $"{item1}";
@@ -161,6 +226,30 @@ namespace ocrTest
       catch (Exception ex)
       {
         MessageBox.Show("오류 발생: " + ex.Message);
+      }
+    }
+
+    private void button5_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void BtnOpenFileDialog_Click(object sender, EventArgs e)
+    {
+      OpenFileDialog ofd = new OpenFileDialog();
+      ofd.Title = "이미지파일 선택";
+      ofd.FileName = "test";
+      ofd.Filter = "그림 파일 (*.jpg, *.jpeg, *.gif, *.bmp, *.png) | *.jpg; *.jpeg; *.gif; *.bmp; *.png; | 모든 파일 (*.*) | *.*";
+
+      DialogResult dr = ofd.ShowDialog();
+
+      if (dr == DialogResult.OK)
+      {
+        textBox2.Text = ofd.FileName;
+        lbStatus.Text = $"Status : {ofd.FileName} 이미지 불러옴";
+      }
+      else if (dr == DialogResult.Cancel)
+      {
       }
     }
   }
