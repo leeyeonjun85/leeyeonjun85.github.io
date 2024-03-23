@@ -61,7 +61,7 @@ namespace ocrTest
             // 응답 출력
             string responseString = System.Text.Encoding.UTF8.GetString(responseBytes);
             Console.WriteLine(responseString);
-
+             
           }
         }
       }
