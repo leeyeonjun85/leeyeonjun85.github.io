@@ -7,7 +7,7 @@ TMP_FILEPATH = os.path.join(os.getcwd(), 'db', 'tmp.csv')
 def create_app(config=None):
     app = Flask(__name__)
     
-    # 작업폴더를 '/mini_flask_app'으로 변경
+    # 작업폴더 변경
     os.chdir(os.path.dirname(__file__))
     
     from mini_flask_app.views.main_views import main_bp
