@@ -99,3 +99,9 @@ git add . && git commit -m "Update" && git push
 {: .notice--danger}
 {: .notice--success}
 ```
+
+
+
+### VSCode 편집기 상단에 클래스, 함수 표시 설정
+- 설정 > 텍스트 편집기 > `Editor > Sticky Scroll: Enabled` 체크박스
+- 편집기 위쪽에서 스크롤하는 동안 중첩된 현재 범위를 표시합니다.
