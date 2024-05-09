@@ -25,6 +25,7 @@
 int led_8 = 8;
 int led_9 = 9;
 int led_10 = 10;
+int delayTime = 100;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -36,19 +37,19 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(led_8, HIGH);
-  delay(200);
+  delay(delayTime);
   digitalWrite(led_8, LOW);
-  delay(200);
+  delay(delayTime);
 
   digitalWrite(led_9, HIGH);
-  delay(200);
+  delay(delayTime);
   digitalWrite(led_9, LOW);
-  delay(200);
+  delay(delayTime);
 
   digitalWrite(led_10, HIGH);
-  delay(200);
+  delay(delayTime);
   digitalWrite(led_10, LOW);
-  delay(200);
+  delay(delayTime);
 
   /*
   digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
