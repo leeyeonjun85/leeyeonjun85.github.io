@@ -43,8 +43,9 @@
 # Ruby 설치
 ## 아래 주소에서 다운받아서 실행하여 설치
 https://rubyinstaller.org/downloads/
-## jekyll은 32bit이기 때문에 (x86)으로 설치
+## jekyll은 32bit이기 때문에 (x86)으로 설치 [x]
 # rubyinstaller-devkit-2.7.8-1-x86.exe
+# rubyinstaller-devkit-3.3.5-1-x64.exe
     
 # 루비 설치 후 컴퓨터 재시작 후 VSCode Gitbash 터미널
 ruby -v           # 루비 버전확인 가능
