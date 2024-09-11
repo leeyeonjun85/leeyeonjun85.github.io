@@ -1,5 +1,5 @@
 ---
-title: "Google API"
+title: "Google API & C#"
 excerpt: "구글API 활용하여 구글 캘린더, 구글 드라이브 연동하기"
 
 categories:
@@ -7,7 +7,7 @@ categories:
 
 tags:
   - 개발일지
-  - 스마트팩토리
+  - C#
   - API
 
 use_math: true
@@ -15,7 +15,7 @@ use_math: true
 header:
   teaser: /assets/images/background/bitcoin-7693848_1920.png
 
-last_modified_at: 2024-09-10
+last_modified_at: 2024-09-11
 ---
 
 
