@@ -66,6 +66,7 @@ static void Main(string[] args)
 ### 자체 포함 앱 배포(Self Contained)  
 - <mark>라즈베리에 .NET SDK 설치 필요 없음</mark>  
 - 게시 파일에 .NET SDK를 포함하는 방식이어서 <mark>게시된 파일이 큼</mark>  
+- 가장 기초적인 `Hellow World` 프로젝트가 무려 70mb가 넘음!  
 
 #### Visual Studio에서 배포하는 방법  
 - 게시 프로필 요약에서 편집을 선택하고 설정 탭을 선택  
@@ -105,7 +106,7 @@ Hello, 채은!
 ### 프레임워크 종속 앱 배포(Framework Dependent)  
 - <mark>라즈베리에 .NET SDK 설치해야 함</mark>  
 - 게시 파일에 프로젝트 DLL만 포함되고, .NET SDK는 라즈베리에 직접 설치하기 때문에, <mark>게시파일이 작음</mark>  
-
+- 게시된 `Hellow World` 프로젝트가 500kb도 안됨  
 
 #### 라즈베리에 .NET SDK 설치  
 - 라즈베리에 최신 버전의 .NET SDK를 설치하자
