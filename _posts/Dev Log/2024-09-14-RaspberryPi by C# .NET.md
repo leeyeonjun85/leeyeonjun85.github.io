@@ -48,7 +48,7 @@ last_modified_at: 2024-09-14
 ### 테스트 프로젝트 `Hello World`  
 - Visual Studio에서 콘솔 프로젝트 생성  
 - .NET 7.0으로 생성  
-  - 현 시점에서 **리눅스 지원 최신 .버전이 .NET 7.0**  
+  - 현 시점에서 **리눅스 지원 최신 버전이 .NET 7.0**  
 - `Program.cs` 파일 수정  
 ```cs
 static void Main(string[] args)
