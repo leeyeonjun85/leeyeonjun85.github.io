@@ -58,7 +58,7 @@ last_modified_at: 2024-09-25
 - .NET 7.0으로 생성  
   - 현 시점에서 **리눅스 지원 최신 버전이 .NET 7.0**  
 - GPIO핀을 사용하기 위하여 패키지 설치
-  - 패키지 관리자아에서 `Install-Package System.Device.Gpio`
+  - 패키지 관리자에서 `Install-Package System.Device.Gpio`
   - 또는 누겟에서 패키지 설치
 - `Program.cs` 파일 수정  
 
