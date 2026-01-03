@@ -34,14 +34,16 @@ last_modified_at: 2022-11-02
 <br>
 
 ### 현재...
+#### 수학교사
 '[오투공부방](https://naver.me/FtlvRQZZ)'을 아내와 함께 운영📚  
 
 <div style="width : 80%; margin : auto;">
-  <a href="https://naver.me/FtlvRQZZ/" target="_blank">
+  <a href="https://naver.me/FtlvRQZZ" target="_blank">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/profile/o2study.jpg">
   </a>
 </div>  
 
+#### Developer
 - 2023년 AI Model Developer로 이직 📊💻  
 - 2024년 SmartFactory Manager로 이직 ⚒️🏭
   - 스마트팩토리 공급기업 담당자
@@ -53,8 +55,8 @@ last_modified_at: 2022-11-02
 <br>
 
 ### 미래...
-사랑하는 아내 함께😃🌈  
-![image](../../assets/profile/load3.JPG){: .align-center width="90%"}  
+사랑하는 아내와 함께😃🌈  
+![image](../../assets/images/profile/load3.JPG){: .align-center width="90%"}  
 
 <br><br>
 
