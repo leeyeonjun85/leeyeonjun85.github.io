@@ -54,6 +54,7 @@ last_modified_at: 2022-11-02
 </div>  
 
 #### Developer
+- 현업 개발자로서 활용 가능한 기술 스택입니다.
 <table style="width:90%; margin:auto;">
     <tbody>
         <tr>
