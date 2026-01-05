@@ -139,7 +139,7 @@ author:
   avatar           : "/assets/images/profile/cheetah/cheetah-800x.jpg"
   bio              : >-
                     📚 인공지능 전문가 🧐
-  location         : "Asan, South Korea"
+  location         : # "Asan, South Korea"
   email            : # "leeyeonjun85@gmail.com"
   links:
     - label: "Homepage"
@@ -151,6 +151,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leeyeonjun85"
+    - label: "Location"
+      icon: "fas fa-fw fa-map-marker"
+      url: "https://map.naver.com/v5/entry/place/1367700347"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
