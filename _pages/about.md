@@ -77,8 +77,6 @@ last_modified_at: 2022-11-02
             <td><img src="https://img.shields.io/badge/C%23-FFCA28?style=plastic&logo=C#&logoColor=white"/></td>
             <td><img src="https://img.shields.io/badge/Looker-4285F4?style=plastic&logo=Looker&logoColor=white"/></td>
             <td><img src="https://img.shields.io/badge/Tableau-E97627?style=plastic&logo=Tableau&logoColor=white"/></td>
-            <td>　</td>
-            <td>　</td>
         </tr>
         <tr>
             <td rowspan="3">Data Science</td>
