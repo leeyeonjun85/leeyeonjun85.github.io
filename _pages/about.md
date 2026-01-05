@@ -22,11 +22,14 @@ last_modified_at: 2022-11-02
 ![image](../../assets/images/profile/ShineTree.JPG){: .align-center width="50%"}   
 
 ### 주요 경력
+
 #### AI Model Developer 📊💻 
   - MES, SPC AI 모듈 개발
+
 #### SmartFactory Manager ⚒️🏭
   - 스마트팩토리 공급기업 담당자
   - RS485, Modbus, PLC 통신 모듈 개발
+
 #### RCP Engineer ✈️🏗️
   - 중국 청두 ECHINT 프로젝트
   - 대만 타이중 Micron 프로젝트
