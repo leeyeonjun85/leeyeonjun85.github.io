@@ -59,8 +59,11 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : "leeyeonjun85"
+    repo_id              : "R_kgDOJfvXVQ"   # 현재 저장소의 정확한 node_id (GitHub API 확인)
     category_name        : "Announcements"
+    # ⚠️ 아래 category_id는 이전(재생성 전) 저장소 값일 수 있습니다.
+    #    댓글이 안 뜨면 https://giscus.app 에서 repo 입력 → Announcements 선택 후
+    #    생성된 data-category-id 값으로 교체하세요.
     category_id          : "DIC_kwDOIWxCEc4CSVA6"
     discussion_term      : "pathname"
     reactions_enabled    : "1"
@@ -90,8 +93,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification :  # Google Search Console → HTML 태그 인증의 content 값
 bing_site_verification   :
+# 한국어 블로그는 네이버 검색 노출이 중요합니다.
+# 네이버 서치어드바이저(searchadvisor.naver.com) → 사이트 등록 → HTML 태그의 content 값 입력
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
@@ -108,13 +113,15 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/profile/cheetah/cheetah-800x.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : "Lee Yeonjun" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://github.com/leeyeonjun85"
+    - "https://leeyeonjun.com/"
 
 
 #############################################################################
