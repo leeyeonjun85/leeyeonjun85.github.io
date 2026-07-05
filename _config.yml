@@ -29,7 +29,7 @@ minimal_mistakes_skin    : "air"
 # Site Settings
 locale                   : "ko-KR"
 # locale                   : "en-US"
-title                    : "Lee Yeonjun's GitHub Homepage"
+title                    : "Lee Yeonjun's GitHub Blog"
 title_separator          : "-"
 subtitle                 : "My Dev. Log"
 name                     : &name "Lee Yeonjun"
