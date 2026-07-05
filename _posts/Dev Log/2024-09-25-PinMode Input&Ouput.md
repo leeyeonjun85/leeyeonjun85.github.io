@@ -26,7 +26,7 @@ last_modified_at: 2024-09-25
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/RaspberryPi-dotNet.png){: .align-center width="70%"}
+![image](../../assets/images/etc/RaspberryPi-dotNet.png){: .align-center width="70%" loading="lazy"}
 
 <br><br><br><br>
 
@@ -48,7 +48,7 @@ last_modified_at: 2024-09-25
 
 ### 회로 구성
 
-![image](../../assets/images/post/Button-LED/Button-LED.jpg){: .align-center width="80%"}
+![image](../../assets/images/post/Button-LED/Button-LED.jpg){: .align-center width="80%" loading="lazy"}
 
 - 빨간LED : #18, 220ohm, 작동중 표시용
 - 하얀LED : #21, 220ohm, 버튼 누를 때 점등용
@@ -141,7 +141,7 @@ private static void gpioPin_ValueChanged(object sender, PinValueChangedEventArgs
 ### 라즈베리파이에 배포 후 테스트 실행
 - 라즈베리파이에 C# .NET 배포하는 방법은 이전 글 [RaspberryPi by C# .NET](https://leeyeonjun85.github.io/dev%20log/RaspberryPi-by-C-.NET/) 참조
 
-![image](../../assets/images/post/Button-LED/Button-LED.gif){: .align-center width="80%"}
+![image](../../assets/images/post/Button-LED/Button-LED.gif){: .align-center width="80%" loading="lazy"}
 
 ```cmd
 Hello, World!

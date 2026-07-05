@@ -25,7 +25,7 @@ last_modified_at: 2023-02-21
 <br><br>
 
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/penguin_png.png){: .align-center width="70%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/penguin_png.png){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br>
@@ -127,10 +127,10 @@ x_test  = ( x_test - np.min( x_test, axis='index')) / (np.max( x_test, axis='ind
 
 ### Seaborn 의 데이터 소개로 대체
 
-![image](https://github.com/allisonhorst/palmerpenguins/raw/main/man/figures/culmen_depth.png){: .align-center width="60%"}  
+![image](https://github.com/allisonhorst/palmerpenguins/raw/main/man/figures/culmen_depth.png){: .align-center width="60%" loading="lazy"}  
 
 
-![image](https://seaborn.pydata.org/_images/introduction_29_0.png){: .align-center width="80%"}  
+![image](https://seaborn.pydata.org/_images/introduction_29_0.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -153,7 +153,7 @@ log_CM, fig = draw_CM(log_model)
 - 기준모델 정확도가 무려 97.1% 😳 (큰일이다...)
 - 보통은 기준모델 이상을 목표로 하지만 오늘은 기준모델 만큼이라도 달성하는 것을 목표로 하자
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/logit_cm.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/logit_cm.png){: .align-center width="60%" loading="lazy"}  
 
 <br>
 
@@ -200,7 +200,7 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base1.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base1.png){: .align-center width="60%" loading="lazy"} 
 
 <br>
 
@@ -248,7 +248,7 @@ Trainable params: 1,003
 Non-trainable params: 0
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base2.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base2.png){: .align-center width="60%" loading="lazy"} 
 
 <br>
 
@@ -299,7 +299,7 @@ Trainable params: 11,103
 Non-trainable params: 0
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base3.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/nn_base3.png){: .align-center width="60%" loading="lazy"} 
 
 
 - 인공신경망의 은닉층이 2개 이상으로 늘어나지깐 정확도가 급 상승했다
@@ -314,7 +314,7 @@ Non-trainable params: 0
 
 - 은닉층 1개 ~ 99개 까지 모델을 학습하고 정확도를 비교해보자
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_hiddens.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_hiddens.png){: .align-center width="60%" loading="lazy"} 
 
 - 2개 이후로는 성능의 향상이 크게 없는 것 같다
 - 앞으로는 효율성을 위하여 은닉층은 2개로 고정할 것이다
@@ -325,7 +325,7 @@ Non-trainable params: 0
 
 - 은닉층의 노드는 가중치와 편향의 가중합 연산이 일어나는 부분이다.
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_node.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_node.png){: .align-center width="60%" loading="lazy"} 
 
 - 은닉층이 오르면서 성능도 오르고, 성능의 안정감도 오르는 것 같다.
 - 노드 80 이후로는 큰 차이가 없어보인다.
@@ -337,7 +337,7 @@ Non-trainable params: 0
 
 - 2개 은닉층의 노드 비율을 1:99 , 2:98 , 3:97 ...... 98:2 , 99:1 로 변화시켜 보자
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_shape.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_shape.png){: .align-center width="60%" loading="lazy"} 
 
 - 2개 은닉층의 비율이 크게 차이나는 1:99, 2:98 ... 98:2, 99:1 은 성능 점수도 낮고, 안정감도 떨어지는 것 같다.
 - 은닉층의 비율은 비슷한 것이 좋겠다.
@@ -375,7 +375,7 @@ def get_model(nodes=100, lr=0.001):
 - 인공신경망에서는 역전파를 통하여 모델의 업데이트가 일어나기 때문에 epoch가 많아지면 모델이 정교해질 가능성이 있다.
 - epoch를 1~30 까지 조정하며 정확도를 평가해보자
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_epoch.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_epoch.png){: .align-center width="60%" loading="lazy"}  
 
 <br>
 
@@ -388,7 +388,7 @@ def get_model(nodes=100, lr=0.001):
 - $Nobs. Data = batch\_size \times Iteration(by \; epoch)$
 - 실험 결과 80 이하가 적당한 것 같다.
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_batch_size.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/test_batch_size.png){: .align-center width="60%" loading="lazy"}  
 
 
 <br><br>
@@ -446,7 +446,7 @@ plt.show()
 - 학습률이 epoch가 진행됨에 따라 만든 함수에 따라서 감소하는 것을 볼 수 있다.
 - Train Accuracy : 0.996, Test Accuracy : 0.986
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/step_decay.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/step_decay.png){: .align-center width="60%" loading="lazy"} 
 
 <br>
 
@@ -787,7 +787,7 @@ Trainable params: 11,103
 Non-trainable params: 0
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/randomized_search_CM.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/randomized_search_CM.png){: .align-center width="60%" loading="lazy"}  
 
 <br>
 
@@ -868,7 +868,7 @@ Trainable params: 11,103
 Non-trainable params: 0
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/grid_search_CM.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/grid_search_CM.png){: .align-center width="60%" loading="lazy"}  
 
 <br>
 
@@ -955,7 +955,7 @@ Trainable params: 11,103
 Non-trainable params: 0
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/keras_tuner_CM.png){: .align-center width="60%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/penguins/keras_tuner_CM.png){: .align-center width="60%" loading="lazy"} 
 
 
 <br><br>
@@ -970,7 +970,7 @@ Non-trainable params: 0
 
 <br>
 
-![image](https://leeyeonjun85.github.io/assets/images/etc/kalkal.jpg){: .align-center width="60%"}  
+![image](https://leeyeonjun85.github.io/assets/images/etc/kalkal.jpg){: .align-center width="60%" loading="lazy"}  
 
 
 

@@ -23,7 +23,7 @@ last_modified_at: 2022-12-07
 # [코드스테이츠](https://www.codestates.com/)와 함께하는 'AI 부프캠프'  
 
 
-![AI 부트캠프 합격 메일](https://ci4.googleusercontent.com/proxy/l-6dCCzD-wRFMpsA7CeaSCKUWUUgqui4jl1fGoXQ1i4GmAQK7oMxtbESBG_YXG62lJhMKZ69v2QjKucdlg=s0-d-e1-ft#https://img.stibee.com/9258_1646630216.jpg)
+![AI 부트캠프 합격 메일](https://ci4.googleusercontent.com/proxy/l-6dCCzD-wRFMpsA7CeaSCKUWUUgqui4jl1fGoXQ1i4GmAQK7oMxtbESBG_YXG62lJhMKZ69v2QjKucdlg=s0-d-e1-ft#https://img.stibee.com/9258_1646630216.jpg){: loading="lazy"}
 
 2022년 12월 5일. 코드스테이츠로부터 AI부트캠프에 합격했다는 메일을 받았다.  
 나는 이미 같은 코스 16기에 지원했다가 테스트 점수 미달로 불합격 통지를 받은 경험이 있다.  

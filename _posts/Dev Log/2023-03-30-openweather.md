@@ -26,7 +26,7 @@ last_modified_at: 2023-03-30
 <br><br>
 
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/rainbow-4047523_1920.jpg){: .align-center width="70%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/rainbow-4047523_1920.jpg){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br>
@@ -44,7 +44,7 @@ last_modified_at: 2023-03-30
 
 <div style="width : 80%; margin : auto;">
   <a href="http://15.164.244.197/etc/openweather/" target="_blank">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213332.png">
+    <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213332.png">
   </a>
 </div>  
 
@@ -77,7 +77,7 @@ Open Weather API 는 전세계의 날씨정보를 무료로 제공한다.
 
 <div style="width : 80%; margin : auto;">
   <a href="http://bulk.openweathermap.org/sample/" target="_blank">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_205832.png">
+    <img loading="lazy" src="{{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_205832.png">
   </a>
 </div>  
 
@@ -129,7 +129,7 @@ Open Weather API 는 전세계의 날씨정보를 무료로 제공한다.
 ```
 
 - 이렇게 정리 된 전세계 209,579개 도시의 도시정보를 MongoDB로 입력하였다.  
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213105.png){: .align-center width="80%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213105.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -214,7 +214,7 @@ def get_weather(self, CITY_NAME):
 
 <br>
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213332.png){: .align-center width="80%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/openweather/20230330_213332.png){: .align-center width="80%" loading="lazy"}  
 
 <br>
 

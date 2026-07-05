@@ -26,7 +26,7 @@ last_modified_at: 2023-05-31
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/sql.png){: .align-center width="70%"}  
+![image](../../assets/images/etc/sql.png){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br><br><br>

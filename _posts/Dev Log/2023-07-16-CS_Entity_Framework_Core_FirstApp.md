@@ -26,7 +26,7 @@ last_modified_at: 2023-07-16
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/1_FWSSoTefmvAfVB-XanzJdQ.webp){: .align-center width="70%"}   
+![image](../../assets/images/etc/1_FWSSoTefmvAfVB-XanzJdQ.webp){: .align-center width="70%" loading="lazy"}   
 
 
 <br><br><br><br>
@@ -84,11 +84,11 @@ last_modified_at: 2023-07-16
 ### 실습 프로젝트 만들기
 - Visual Studio에서 간단하게 **콘솔 앱**을 만듧니다.
 
-![image](../../assets/images/post/EFCore/20230716_121545.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_121545.png){: .align-center width="80%" loading="lazy"}  
 
 - 자유롭게 **프로젝트 이름, 위치, 솔루션 이름** 등을 정합니다.  
 
-![image](../../assets/images/post/EFCore/20230716_124732.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_124732.png){: .align-center width="80%" loading="lazy"}  
 
 - 저는 다음과 같이 입력하였습니다.
   - 위치 : D:\CS_coding\CS_Study
@@ -101,7 +101,7 @@ last_modified_at: 2023-07-16
     - {: .notice--warning}D:\CS_coding\CS_Study\EFCore_SQLite  
 - 처음으로 만드는 프로그램이기 때문에 네임스페이스와 클래스를 직접 확인하기 위하여 **최상위문 사용 안 함**에 체크합니다.
 
-![image](../../assets/images/post/EFCore/20230716_124800.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_124800.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -111,17 +111,17 @@ last_modified_at: 2023-07-16
 - 패키지 설치를 위하여 **NuGet 패키지 관리** 창을 엽니다.
   - 화면 오른쪽 `솔루션 탐색기`에서 프로젝트 이름(EFCore_First)을 우클릭하여 `NuGet 패키지 관리`를 클릭하면 **NuGet 패키지 관리** 창을 열 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_125741.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_125741.png){: .align-center width="80%" loading="lazy"}  
 
 - `NuGet 패키지 관리` 창에서 **찾아보기**를 클릭 후 `Microsoft.EntityFrameworkCore.Tools` 라고 검색하면 나오는 첫번째 **Microsoft.EntityFrameworkCore.Tools 작성자: Microsoft, 231M개 다운로드**를 클릭하고, 오른쪽 **설치**를 클릭하여 패키지를 설치합니다.
   - 설치를 누르기 전에 `설명`을 간단히 살펴보시길 바랍니다.
   - 약관에 동의 후 설치를 완료합니다.
 
-![image](../../assets/images/post/EFCore/20230716_132102.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_132102.png){: .align-center width="80%" loading="lazy"}  
 
 - 다음으로 `SQLite`를 사용하기 위하여 `NuGet 패키지 관리` 창에서 `Microsoft.EntityFrameworkCore.Sqlite`를 검색하여 마찬가지로 설치합니다.
 
-![image](../../assets/images/post/EFCore/20230716_132515.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_132515.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -133,17 +133,17 @@ last_modified_at: 2023-07-16
 - 실습 편의상 DbContext, Model를 하나의 파일로 만들겠습니다.
 - 오른쪽 `솔루션 탐색기`에서 프로젝트이름(EFCore_First)을 우클릭하여 `추가` 클릭, `클래스`를 클릭합니다.
 
-![image](../../assets/images/post/EFCore/20230716_141114.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_141114.png){: .align-center width="80%" loading="lazy"}  
 
 - 이름을 `Context_Model.cs`로 지정하고 `추가`를 클릭합니다.
 
-![image](../../assets/images/post/EFCore/20230716_141333.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_141333.png){: .align-center width="80%" loading="lazy"}  
 
 - `Context_Model.cs`파일이 생성된 것을 확인하고, `Context_Model.cs` 창이 자동으로 열립니다.
   - 표시된 위치에 아래의 코드블럭을 삽입합니다.
   - 코드 삽입과 동시에 `using Microsoft.EntityFrameworkCore;` 네임스페이스가 자동으로 추가됩니다.
 
-![image](../../assets/images/post/EFCore/20230716_141545.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_141545.png){: .align-center width="80%" loading="lazy"}  
 
 ```cs
 public class BloggingContext : DbContext
@@ -190,27 +190,27 @@ public class Post
 ### 데이터베이스 만들기
 - 데이터베이스를 만들기 위하여 **페키지 관리자 콘솔**을 엽니다.
 
-![image](../../assets/images/post/EFCore/20230716_143112.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_143112.png){: .align-center width="80%" loading="lazy"}  
 
 - 화면 아랫쪽에 **패키지 관리자 콘솔** 창에 `Add-Migration InitialCreate`를 입력하고 `엔터`를 누릅니다.
 
-![image](../../assets/images/post/EFCore/20230716_143317.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_143317.png){: .align-center width="80%" loading="lazy"}  
 
 - Migration이 시작되고, `Build succeeded.`라는 반가운 메시지를 확인할 수 있습니다.(1)
 - 오른쪽 솔루션 탐색기에서 `Migrations` 폴더가 생성된 것을 확인할 수 있습니다.(2)
 - `Migrations`폴더에있는 `20230716053419_InitialCreate.cs` 창이 자동으로 열렸습니다.(3)
 
-![image](../../assets/images/post/EFCore/20230716_143602.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_143602.png){: .align-center width="80%" loading="lazy"}  
 
 - `20230716053419_InitialCreate.cs` 파일을 간단히 살펴보면 `CreateTable`이라는 함수가 `Blogs`라는 이름의 테이블을 만든다는 것을 알 수 있습니다.
 - `20230716053419_InitialCreate.cs` 파일을 실제로 실행하여 데이터베이스에 테이블을 만들기 위하여 **패키지 관리자 콘솔**에 `Update-Database`을 입력합니다.
   - `Build succeeded.`라는 반가운 메시지를 확인할 수 있고, 데이터베이스에 테이블이 생성되었습니다.
 
-![image](../../assets/images/post/EFCore/20230716_144302.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_144302.png){: .align-center width="80%" loading="lazy"}  
 
 - 윈도우 탐색기에서 작업폴더에 `blogging.db`라는 SQLite DB가 생성된 것을 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_144820.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_144820.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -219,7 +219,7 @@ public class Post
 ### CRUD 구현
 - 간단하게 CRUD를 구현하기 위하여 `Program.cs`파일에서 `Console.WriteLine("Hello, World!")`를 삭제하고 아래의 코드를 삽입합니다.
 
-![image](../../assets/images/post/EFCore/20230716_145218.png){: .align-center width="90%"}  
+![image](../../assets/images/post/EFCore/20230716_145218.png){: .align-center width="90%" loading="lazy"}  
 
 ```cs
 using var db = new BloggingContext();
@@ -262,7 +262,7 @@ db.SaveChanges();
 
 - CRUD 과정을 확인하기 위하여 `중단점`을 클릭하고 `F5` 를 눌러 디버깅과 함께 실행합니다.
 
-![image](../../assets/images/post/EFCore/20230716_145703.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_145703.png){: .align-center width="80%" loading="lazy"}  
 
 - 디버깅이 실행되면 중단점을 지정한 곳에서 노란색 화살표가 멈춰있는 것을 확인할 수 있습니다.(1)
 - 화면 아래에서 `db`안에있는 `DbPath`에서 `보기`를 클릭합니다.(2)
@@ -270,69 +270,69 @@ db.SaveChanges();
   - {: .notice--warning}D:/CS_coding/CS_Study/EFCore_SQLite/blogging.db  
   - 실습환경이 윈도우이기 때문에 슬래시를 모두 `/`로 통일해주면 마음이 편안합니다.😆  
 
-![image](../../assets/images/post/EFCore/20230716_150211.png){: .align-center width="90%"}  
+![image](../../assets/images/post/EFCore/20230716_150211.png){: .align-center width="90%" loading="lazy"}  
 
 - 데이터베이스를 시각적으로 확인하기 위하여 `DBeaver`를 실행하여 데이터베이스를 추가합니다.
 
-![image](../../assets/images/post/EFCore/20230716_144529.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_144529.png){: .align-center width="80%" loading="lazy"}  
 
 - `Path`에 클립보드로 복사해놓은 `D:/CS_coding/CS_Study/EFCore_SQLite/blogging.db`를 입력하고 `완료`를 클릭합니다.
   - 슬래시 방향은 여기서는 크게 문제가 되지 않아요.😉
 
-![image](../../assets/images/post/EFCore/20230716_150816.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_150816.png){: .align-center width="80%" loading="lazy"}  
 
 - `blogging.db` 더블클릭(1), `테이블` 더블클릭(2), `엔티티 관계도`를 클릭(3)하면 스키마를 확인할 수 있습니다.(4)
   - `테이블` 가운데 `Blogs`를 더블클릭하면 아직 아무런 데이터가 없는 것도 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_151008.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_151008.png){: .align-center width="80%" loading="lazy"}  
 
 <br>
 
 #### Create
 - 다시 `Visual Studio`로 돌아와 노란 화살표가 그림과 같이 이동할 수 있도록 `F10`을 여러번 누릅니다.
 
-![image](../../assets/images/post/EFCore/20230716_151347.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_151347.png){: .align-center width="80%" loading="lazy"}  
 
 - `DBeaver`로 가서 `Blogs`테이블을 더블클릭한 뒤 `F5`를 눌러 새로고침하면 오른쪽에서 데이터가 추가 된 것을 확인할 수 있습니다.
   - `Posts`테이블을 더블클릭하면 아직 아무런 데이터가 없음을 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_151555.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_151555.png){: .align-center width="80%" loading="lazy"}  
 
 <br>
 
 #### Read
 - 다시 `Visual Studio`로 돌아와 노란 화살표가 그림과 같이 이동할 수 있도록 `F10`을 여러번 누릅니다.
 
-![image](../../assets/images/post/EFCore/20230716_151952.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_151952.png){: .align-center width="80%" loading="lazy"}  
 
 - 화면 아래 `로컬` 탭에서 `blog`와 `blog_my` 가 불러와진 것을 확인할 수 있습니다.
   - 왼쪽 화살표를 클릭하여 `blog`의 내용을 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_152115.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_152115.png){: .align-center width="80%" loading="lazy"}  
 
 <br>
 
 #### Update
 - 다시 `Visual Studio`로 돌아와 노란 화살표가 그림과 같이 이동할 수 있도록 `F10`을 여러번 누릅니다.
 
-![image](../../assets/images/post/EFCore/20230716_152406.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_152406.png){: .align-center width="80%" loading="lazy"}  
 
 - `DBeaver`로 가서 `Blogs`테이블을 더블클릭한 뒤 `F5`를 눌러 새로고침하면 오른쪽에서 첫번째 데이터의 URL이 `http://blogs.msdn.com/adonet`에서 `https://devblogs.microsoft.com/dotnet`으로 변경된 것을 확인할 수 있습니다.
   - 또한 `Posts`테이블을 살펴보면 데이터가 추가된 것을 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_152546.png){: .align-center width="90%"}  
+![image](../../assets/images/post/EFCore/20230716_152546.png){: .align-center width="90%" loading="lazy"}  
 
 <br>
 
 #### Delete
 - 다시 `Visual Studio`로 돌아와 노란 화살표가 그림과 같이 이동할 수 있도록 `F10`을 여러번 누릅니다.
 
-![image](../../assets/images/post/EFCore/20230716_152856.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_152856.png){: .align-center width="80%" loading="lazy"}  
 
 - `DBeaver`로 가서 `Blogs`테이블과 `Posts`테이블의 내용이 모두 삭제되었음을 확인합니다.
   - `Blogs`테이블과 `Posts`테이블이 서로 외래키로 연결되어있기 때문에 `Blogs`테이블의 내용을 삭제하면 연결된 `Posts`테이블의 내용도 함께 삭제됩니다.
 
-![image](../../assets/images/post/EFCore/20230716_152950.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_152950.png){: .align-center width="80%" loading="lazy"}  
 
 - `Visual Studio`로 돌아와 `F5`를 눌러 디버깅을 마칩니다.
 
@@ -352,25 +352,25 @@ db.SaveChanges();
 ### 새로운 프로젝트 만들기
 - 화면 오른쪽의 `솔루션 'EFCore SQLite' (1 프로젝트...`을 우클릭, `추가` 클릭, `새 프로젝트` 클릭하여 새로운 프로젝트를 만듧니다.
 
-![image](../../assets/images/post/EFCore/20230716_153534.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_153534.png){: .align-center width="80%" loading="lazy"}  
 
 - 새로운 `콘솔 앱` 프로젝트를 만듧니다.
 
-![image](../../assets/images/post/EFCore/20230716_153729.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_153729.png){: .align-center width="80%" loading="lazy"}  
 
 - 새로운 프로젝트인 `EFCore_FromDB`로 전환합니다.
 
-![image](../../assets/images/post/EFCore/20230716_154134.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_154134.png){: .align-center width="80%" loading="lazy"}  
 
 - 패키지 설치를 간단하게 `패키지 관리자 콘솔`에 다음 명령어를 입력하여 설치할 수 있습니다.
   - `Install-Package Microsoft.EntityFrameworkCore.Tools`
   - `Install-Package Microsoft.EntityFrameworkCore.Sqlite`
 
-![image](../../assets/images/post/EFCore/20230716_154338.png){: .align-center width="80%"}  
+![image](../../assets/images/post/EFCore/20230716_154338.png){: .align-center width="80%" loading="lazy"}  
 
 - 설치된 패키지는 오른쪽 솔루션 탐색기에서 확인할 수 있습니다.
 
-![image](../../assets/images/post/EFCore/20230716_154440.png){: .align-center width="60%"}  
+![image](../../assets/images/post/EFCore/20230716_154440.png){: .align-center width="60%" loading="lazy"}  
 
 
 <br><br>
@@ -384,7 +384,7 @@ db.SaveChanges();
 - `패키지 관리자 콘솔`에 명령어를 입력하면 `Build succeeded.`라는 반가운 메시지를 확인할 수 있고(1), 오른쪽 `솔루션 탐색기`에서 `Models`라는 폴더와 파일들이 생성된 것을 확인할 수 있습니다(2). 또한 생성된 파일 가운데 `BloggingContext.cs`라는 파일이 자동으로 열렸습니다(3).
   - 첫번째 프로젝트에서 `Context_Model.cs`파일에 DbContext, Model 클래스를 모두 만들었지만, 두번째 프로젝트에서 이미 만들어진 데이터베이스에서 DbContext, Model을 불러오면 DbContext는 `BloggingContext.cs`라는 파일로, Model은 `Blog.cs`, `Post.cs`라는 각각의 파일로 자동으로 생성됩니다.
 
-![image](../../assets/images/post/EFCore/20230716_155146.png){: .align-center width="90%"}  
+![image](../../assets/images/post/EFCore/20230716_155146.png){: .align-center width="90%" loading="lazy"}  
 
 
 <br><br>

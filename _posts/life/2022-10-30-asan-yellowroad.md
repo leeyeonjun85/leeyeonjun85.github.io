@@ -31,11 +31,11 @@ last_modified_at: 2022-10-30
 
 ### 붕어빵 먹으면서 은행나무길 산책하기   
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/asan_yellow_tree_1.jpg){: .align-center width="40%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/asan_yellow_tree_1.jpg){: .align-center width="40%" loading="lazy"}
 
 ### 사랑하는 아내와 함께  
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/asan_yellow_tree_4.jpg){: .align-center width="60%"}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/diary/asan_yellow_tree_4.jpg){: .align-center width="60%" loading="lazy"}
 
  
 

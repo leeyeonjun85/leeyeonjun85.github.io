@@ -30,7 +30,7 @@ last_modified_at: 2023-04-16
 
 
 
-![image](../../assets/images/etc/clocks-257911_1920.jpg){: .align-center width="70%"}  
+![image](../../assets/images/etc/clocks-257911_1920.jpg){: .align-center width="70%" loading="lazy"}  
 
 
 
@@ -53,7 +53,7 @@ last_modified_at: 2023-04-16
 
 ## 컴퓨터에서 시간을 표기하는 방법
 
-![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/World_Time_Zones_Map.png/1920px-World_Time_Zones_Map.png){: .align-center width="90%"}  
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/World_Time_Zones_Map.png/1920px-World_Time_Zones_Map.png){: .align-center width="90%" loading="lazy"}  
 
 - 협정 세계시(UTC : Coordinated Universal Time, Universal Time Coordinated)
   - 1972년 1월 1일부터 시행된 국제 표준시
@@ -83,7 +83,7 @@ last_modified_at: 2023-04-16
   - ISO 8601에 따라 KST 시간 표현하기
     - 2016-10-27T17:13:40+09:00
 
-![image](../../assets/images/post/time/ID9TT2S.png){: .align-center width="70%"}  
+![image](../../assets/images/post/time/ID9TT2S.png){: .align-center width="70%" loading="lazy"}  
 
 - Unix Time
   - 1970년 1월 1일 00:00:00 협정 세계시(UTC) 부터의 경과 시간을 초로 환산하여 정수로 나타낸 것

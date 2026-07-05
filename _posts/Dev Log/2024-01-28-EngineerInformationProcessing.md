@@ -27,7 +27,7 @@ last_modified_at: 2024-01-28
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/exam-2428208_1280.png){: .align-center width="70%"}   
+![image](../../assets/images/etc/exam-2428208_1280.png){: .align-center width="70%" loading="lazy"}   
 
 
 <br><br><br><br>
@@ -432,9 +432,9 @@ last_modified_at: 2024-01-28
 
 ## 시험 결과
 
-![image](../../assets/posts_assets/2024-01-28-EngineerInformationProcessing/정보처리기사_합격인증.png){: .align-center width="70%"} 
+![image](../../assets/posts_assets/2024-01-28-EngineerInformationProcessing/정보처리기사_합격인증.png){: .align-center width="70%" loading="lazy"} 
 
-![image](../../assets/posts_assets/2024-01-28-EngineerInformationProcessing/정보처리기사자격증.jpg){: .align-center width="70%"} 
+![image](../../assets/posts_assets/2024-01-28-EngineerInformationProcessing/정보처리기사자격증.jpg){: .align-center width="70%" loading="lazy"} 
 
 
 

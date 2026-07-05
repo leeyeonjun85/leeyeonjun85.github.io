@@ -26,7 +26,7 @@ last_modified_at: 2023-07-14
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/start_road.jpg){: .align-center width="70%"}  
+![image](../../assets/images/etc/start_road.jpg){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br><br><br>
@@ -108,7 +108,7 @@ last_modified_at: 2023-07-14
 - 취업을 위한 중요한 관문가운데 코딩테스트가 있다.
 - 코딩테스트를 준비하기 위한 많은 사이트가 있는데, 기초단계부터 준비할 수 있는 [[프로그래머스]](https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc){:target="_blank"}  , [[백준]](https://www.acmicpc.net/step){:target="_blank"}  을 추천한다.
 - 부트캠프를 준비하면서 코딩 실력은 프로그래머스 기준으로 `코딩 기초 트레이닝`을 풀 수 있을 정도의 실력을 갖추면 된다.
-![image](../../assets/images/post/AIB_Finale/20230715_115537.png){: .align-center width="90%"}  
+![image](../../assets/images/post/AIB_Finale/20230715_115537.png){: .align-center width="90%" loading="lazy"}  
 - 그리고 부트캠프 Section1 ~ Section3에서는 `코딩테스트 입문`, Section4 ~ Section7은 `코딩테스트 고득점 Kit`, Section4에 데이터베이스를 배우기 시작하면 `SQL 고득점 Kit`을 단계적으로 풀어보면 좋을 것 같다.
 - 백준도 비슷하게 단계별로 코딩테스트를 풀어볼 수 있어서, 프로그래머스가 부족하다면 백준도 함께 풀어보면 좋다.
 

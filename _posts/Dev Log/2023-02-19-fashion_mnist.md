@@ -25,7 +25,7 @@ last_modified_at: 2023-02-19
 <br><br>
 
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/etc/fashion-902657_1920.jpg){: .align-center width="70%"}  
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/etc/fashion-902657_1920.jpg){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br>
@@ -140,7 +140,7 @@ plt.grid(False)
 plt.show()
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_train20000.png){: .align-center width="60%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_train20000.png){: .align-center width="60%" loading="lazy"}  
 
 <br>
 
@@ -157,7 +157,7 @@ for i, val in enumerate(range(attention_train-12,attention_train+13)):
 plt.show()
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_review.png){: .align-center width="80%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_review.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -250,7 +250,7 @@ plt.xticks(range(10), class_names, rotation=90)
 plt.show()
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test1.png){: .align-center width="70%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test1.png){: .align-center width="70%" loading="lazy"}  
 
 - 맞았다~!😄
 
@@ -269,7 +269,7 @@ plt.xticks(range(10), class_names, rotation=90)
 plt.show()
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test2.png){: .align-center width="70%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test2.png){: .align-center width="70%" loading="lazy"}  
 
 - 틀렸다...😥
 
@@ -291,14 +291,14 @@ plt.tight_layout()
 plt.show()
 ```
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test15s.png){: .align-center width="70%"} 
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_test15s.png){: .align-center width="70%" loading="lazy"} 
 
 - 모델이 대부분 맞혔는데(파란색), 틀린것(빨간색)도 있다
 
 
 #### 혼돈행렬(Confusion Matrix)  
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_cm.png){: .align-center width="70%"}  
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/f_mnist/f_mnist_cm.png){: .align-center width="70%" loading="lazy"}  
 
 
 

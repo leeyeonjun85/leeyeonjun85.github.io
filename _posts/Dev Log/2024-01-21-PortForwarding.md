@@ -28,7 +28,7 @@ last_modified_at: 2024-01-21
 <br><br><br><br>
 
 
-![image](../../assets/images/Database/big-data-7216839_1280.png){: .align-center width="70%"}   
+![image](../../assets/images/Database/big-data-7216839_1280.png){: .align-center width="70%" loading="lazy"}   
 
 
 <br><br><br><br>
@@ -49,7 +49,7 @@ last_modified_at: 2024-01-21
 
 - 약 10년 전 게이밍 노트북을 구매하여 약 5~6년 전부터 사용안하던 랩탑 노트북이 하나 있음
 
-![image](../../assets/images/etc/Laptop_MSI_F61.jpg){: .align-center width="50%"}  
+![image](../../assets/images/etc/Laptop_MSI_F61.jpg){: .align-center width="50%" loading="lazy"}  
 
 - 이 노트북에 MSSQL을 설치하여 <mark>외부접속 가능한 나만의 RDB</mark>를 구성해보고 싶음
 
@@ -62,7 +62,7 @@ last_modified_at: 2024-01-21
 - 1차에선 실패했다...😫
 - 기록을 위하여 1차 시도 과정을 남긴다
 
-![image](../../assets/ppt/plan1.jpg){: .align-center width="90%"}  
+![image](../../assets/ppt/plan1.jpg){: .align-center width="90%" loading="lazy"}  
 
 <br>
 
@@ -108,7 +108,7 @@ last_modified_at: 2024-01-21
 ### 구성 계획
 - IP TIME 공유기를 거치지 않고, SK 브로드밴드 공유기 포트와 노트북을 직접연결하였다.
 
-![image](../../assets/ppt/plan2.jpg){: .align-center width="90%"} 
+![image](../../assets/ppt/plan2.jpg){: .align-center width="90%" loading="lazy"} 
 
 <br>
 

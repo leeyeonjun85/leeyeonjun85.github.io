@@ -29,7 +29,7 @@ last_modified_at: 2023-05-13
 
 <br><br><br><br>
 
-![image](../../assets/images/post/cv_1/s_shoulders_of_giants.jpg){: .align-center width="60%"}  
+![image](../../assets/images/post/cv_1/s_shoulders_of_giants.jpg){: .align-center width="60%" loading="lazy"}  
 
 <br><br><br><br>
 
@@ -155,7 +155,7 @@ last_modified_at: 2023-05-13
       
   fig.savefig(CONFIG['save_img']+'cat_dog.png', dpi=60, bbox_inches='tight')
   ```
-  ![image](../../assets/images/post/cv_1/cat_dog.png){: .align-center width="70%"} 
+  ![image](../../assets/images/post/cv_1/cat_dog.png){: .align-center width="70%" loading="lazy"} 
 
 - 효율적인 학습을 위한 AUTOTUNE 설정
   ```python
@@ -192,7 +192,7 @@ last_modified_at: 2023-05-13
   ```
   - [MobileNetV2 : 전체 모델 구조 확인하기](../../assets/images/post/cv_1/MobileNetV2.png){:target="_blank"}
 - MobileNetV2 : 꼬리부분
-  ![image](../../assets/images/post/cv_1/MobileNetV2_tail_1.png){: .align-center width="70%"}  
+  ![image](../../assets/images/post/cv_1/MobileNetV2_tail_1.png){: .align-center width="70%" loading="lazy"}  
   - `include_top=False`로 설정하면 `top`부분이 제거 된다
 
 - MobileNetV2 : `include_top=False`
@@ -332,7 +332,7 @@ last_modified_at: 2023-05-13
   fig.savefig(CONFIG['save_img'] + 'learning_curve_transfer_1.png', dpi=80)
   ```
 
-  ![image](../../assets/images/post/cv_1/learning_curve_transfer_1.png){: .align-center width="80%"}  
+  ![image](../../assets/images/post/cv_1/learning_curve_transfer_1.png){: .align-center width="80%" loading="lazy"}  
 
 
 <br><br>
@@ -467,7 +467,7 @@ last_modified_at: 2023-05-13
   plt.show()
   fig.savefig(CONFIG['save_img'] + 'learning_curve_transfer_2.png', dpi=80)
   ```
-  ![image](../../assets/images/post/cv_1/learning_curve_transfer_2.png){: .align-center width="80%"}  
+  ![image](../../assets/images/post/cv_1/learning_curve_transfer_2.png){: .align-center width="80%" loading="lazy"}  
 
 - Fine-Tuning 학습 이후 평가
   ```python

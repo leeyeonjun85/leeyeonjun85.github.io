@@ -26,7 +26,7 @@ last_modified_at: 2023-06-01
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/sql.png){: .align-center width="70%"}  
+![image](../../assets/images/etc/sql.png){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br><br><br>
@@ -342,7 +342,7 @@ ORDER BY    OUTS.ANIMAL_ID
 ```
   - 통과🎉
   - 레프트 아웃터 조인  
-![image](../../assets/images/etc/Visual_SQL_JOINS_V2.png){: .align-center width="70%"}  
+![image](../../assets/images/etc/Visual_SQL_JOINS_V2.png){: .align-center width="70%" loading="lazy"}  
 
 
 

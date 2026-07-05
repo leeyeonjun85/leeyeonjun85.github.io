@@ -26,7 +26,7 @@ last_modified_at: 2023-04-15
 <br><br>
 
 
-![image](../../assets/images/etc/nvidaicuda.jpg){: .align-center width="70%"}  
+![image](../../assets/images/etc/nvidaicuda.jpg){: .align-center width="70%" loading="lazy"}  
 
 
 <br><br>
@@ -55,7 +55,7 @@ last_modified_at: 2023-04-15
 - Nvidia 그래픽드라이버 최신으로 설치
 - 아나콘다 설치하고 Anaconda Powershell Prompt를 열어서 `conda create --name 'gpu_test' python=3.10`로 가상환경 만들기
 
-![image](../../assets/images/post/devlog/20230415_223500.png){: .align-center width="80%"}  
+![image](../../assets/images/post/devlog/20230415_223500.png){: .align-center width="80%" loading="lazy"}  
 
 - VSCode 열어서 Gitbash 터미널 열어서 `source C:/ProgramData/Anaconda3/Scripts/activate gpu_test`로 가상환경 실행
 - 이후로 라이브러리는 VSCode 에서 Gitbash 터미널에서 가상환경이 실행된 상태에서 설치하면 됨
@@ -120,7 +120,7 @@ Validation loss: 0.1535
   - 하지만 Pytorch2.0과 Tensorflow를 함께 설치하면 에러가 발생하여 낮은 버전으로 설치할 것임
   - [Pytorch 공식홈피 버전안내](https://pytorch.org/get-started/previous-versions/) 여기 들어가서 아래 그림에 나오는 버전을 확인하여 Ctrl+C 복사
 
-![image](../../assets/images/post/devlog/20230415_212618.png){: .align-center width="70%"}  
+![image](../../assets/images/post/devlog/20230415_212618.png){: .align-center width="70%" loading="lazy"}  
 
 ```bash
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
@@ -290,7 +290,7 @@ Test set Loss & Accuracy : (0.411, 0.860)
 ### Tensorflow GPU 설치
 - [Tensorflow 공식홈피 설치안내](https://www.tensorflow.org/install/pip?hl=en#windows-native)를 보면, 윈도우에서의 GPU지원은 tensorflow 2.10이 마지막 버전이라고 함😱
 
-![image](../../assets/images/post/devlog/20230415_212053.png){: .align-center width="80%"}  
+![image](../../assets/images/post/devlog/20230415_212053.png){: .align-center width="80%" loading="lazy"}  
 
 - 아나콘다에 tensorflow 2.10 GPU 설치하기
 

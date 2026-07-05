@@ -29,7 +29,7 @@ last_modified_at: 2023-02-12
 <br>
 
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/ship-3401500_1920.jpg){: .align-center width="70%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/etc/ship-3401500_1920.jpg){: .align-center width="70%" loading="lazy"}
 
 
 <br>
@@ -92,7 +92,7 @@ rand_seed       = 888
 
 - pandas.ProfileReport() 함수를 이용하여 데이터 살펴보기  
 - 자세한 과정은 생략
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/titanic_profile.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/titanic_profile.png){: .align-center width="90%" loading="lazy"}
 
 
 ### 특성공학  
@@ -224,7 +224,7 @@ test = feature_engineering(test)
 ### 타겟의 분포  
 - 타겟이 약간 불균형한 것으로 보임  
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/target.png){: .align-center width="70%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/target.png){: .align-center width="70%" loading="lazy"}
 
 
 <br>
@@ -299,7 +299,7 @@ print(f'기준모델 정확도 : {accuracy_score(y_train, y_base_pred):.3f}')
 - 최빈값 기준모델이기 때문에 타겟의 최빈값인 0으로 모든 예측값을 만든 모델
 - 기준모델의 정확도(Accuracy)는 타겟의 최빈값 0의 비율과 같은 0.617
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Confusion_Matrix.png){: .align-center width="60%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Confusion_Matrix.png){: .align-center width="60%" loading="lazy"}
 
 
 
@@ -347,7 +347,7 @@ results_df.style.background_gradient(axis='columns',cmap='coolwarm').format(thou
 
 
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Default_Model_Score.png){: .align-center width="70%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Default_Model_Score.png){: .align-center width="70%" loading="lazy"}
 
 - 라이브러리에서 기본값들을 미리 잘 설정해놔서 그런지 기본값만으로도 점수가 잘 나온다.  
 - 하지만 Train와 Validation의 차이가 커서 과적합이 발생한 상황이다.  
@@ -357,7 +357,7 @@ results_df.style.background_gradient(axis='columns',cmap='coolwarm').format(thou
 
 - 나무기반 모델에서 성능에 가장 영향이 큰 하이퍼파라미터 `max_depth` 의 러닝커브를 살펴보자  
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Learning_Curve.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Learning_Curve.png){: .align-center width="90%" loading="lazy"}
 
 - Decision Tree와 Random Forest는 4정도에 최적화가 이루어지고, XGBoost는 잘 모르겠다.  
 
@@ -464,12 +464,12 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 - Decision Tree 의 트리 그래프를 그리면 어떠한 경우에 생존, 사망인지 시각적으로 확인할 수 있다.  
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Decision_Tree.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Decision_Tree.png){: .align-center width="90%" loading="lazy"}
 
 
 - XGBoost 라이브러리도 트리 그래프를 그릴 수 있다.  
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/XGBoost_Tree.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/XGBoost_Tree.png){: .align-center width="90%" loading="lazy"}
 
 - 1~2 분기까지는 두 모델이 같지만 그 후로는 조금씩 다르다.
 
@@ -478,13 +478,13 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 - Decision Tree의 특성중요도를 보면 MDI(Mean Decrease Impurity) 방식은 Sex - Pclass - CabinCategory 순서로 특성이 중요하지만, PI(Permutation Importance) 방식은 Sex - Title - Pclass 순서로 특성이 중요하다.
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_Decision_Tree.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_Decision_Tree.png){: .align-center width="90%" loading="lazy"}
 
 - Randome Forest의 특성중요도에서 MDI방식은 Decision Tree와 같지만, PI방식은 조금 차이가 있다.
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_Random_Forest.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_Random_Forest.png){: .align-center width="90%" loading="lazy"}
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_XGBoost.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/FI_XGBoost.png){: .align-center width="90%" loading="lazy"}
 
 - 모델에 따라서 특성 중요도가 다르고, 특성중요도 계산 방식에 따라서도 다르다.  
 
@@ -499,7 +499,7 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 
 - 세 모델 모두 타겟을 추정하여 캐글에 제출하였다.
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/result.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/result.png){: .align-center width="90%" loading="lazy"}
 
 
 ### 최종 점수
@@ -508,7 +508,7 @@ print(f'✅ Best Score  : {xg_gridCV.best_score_}')
 - Random Forest = 0.77272
 - XGBoost       = 0.78708
 
-![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Best_Model_Score.png){: .align-center width="90%"}
+![kaggle_titanic_image]({{ site.url }}{{ site.baseurl }}/assets/images/coding/kaggle_titanic/Best_Model_Score.png){: .align-center width="90%" loading="lazy"}
 
 - Random Forest와 XGBoost는 아직 과적합이 많이 남아있는 모습이다.
 - 베이지안서치 등으로 하이퍼파라미터 튜닝을 더 시도해 보면 점수를 올릴 수 있을 것 같다.

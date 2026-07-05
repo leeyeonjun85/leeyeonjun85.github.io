@@ -26,7 +26,7 @@ last_modified_at: 2024-09-14
 <br><br><br><br>
 
 
-![image](../../assets/images/etc/RaspberryPi-dotNet.png){: .align-center width="70%"}
+![image](../../assets/images/etc/RaspberryPi-dotNet.png){: .align-center width="70%" loading="lazy"}
 
 <br><br><br><br>
 

@@ -26,7 +26,7 @@ last_modified_at: 2024-09-11
 <br><br><br><br>
 
 
-![image](../../assets/images/background/bitcoin-7693848_1920.png){: .align-center width="70%"}   
+![image](../../assets/images/background/bitcoin-7693848_1920.png){: .align-center width="70%" loading="lazy"}   
 
 
 <br><br><br><br>
@@ -52,7 +52,7 @@ last_modified_at: 2024-09-11
 
 ### 구성
 
-![image](../../assets/ppt/스크린샷%202024-09-10%20185019.png){: .align-center width="80%"}   
+![image](../../assets/ppt/스크린샷%202024-09-10%20185019.png){: .align-center width="80%" loading="lazy"}   
 
 - 사용자가 구글 캘린더를 조회, 추가, 삭제 할 수 있는 **테스트 UI 프로그램**은 간단하게 C# Winform(.NET 8.0) 으로 만들자
 - C#으로 구글API를 사용하려면 `Google.Apis` 패키지가 필요
@@ -74,11 +74,11 @@ last_modified_at: 2024-09-11
 
 - `새 캘린더 만들기`를 클릭하여 새로운 캘린더를 만들자
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225609.png){: .align-center width="80%"} 
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225609.png){: .align-center width="80%" loading="lazy"} 
 
 - 캘린더 설정 > 캘린더 통합 > <mark>캘린더 ID</mark> 를 저장
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225815.png){: .align-center width="80%"} 
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225815.png){: .align-center width="80%" loading="lazy"} 
 
 
 <br><br>
@@ -88,11 +88,11 @@ last_modified_at: 2024-09-11
 - 캘린더에 이벤트를 등록할 때 추가할 첨부파일이 저장될 구글드라이브의 폴더 ID를 얻자
 
 - 구글드라이브 > 새폴더 생성 > 공유 > <mark>링크복사</mark>
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225815.png){: .align-center width="80%"} 
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/스크린샷%202024-09-10%20225815.png){: .align-center width="80%" loading="lazy"} 
 
 - 폴더ID는 `drive/folders/`와 `?usp=sharing` 사이의 문자들임
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/getgoogledrivedfolderid.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/getgoogledrivedfolderid.png){: .align-center width="80%" loading="lazy"}
 
 
 
@@ -112,7 +112,7 @@ last_modified_at: 2024-09-11
 - 구글 클라우드 API를 만들자
 - [구글 클라우드 API 대시보드 바로가기(https://console.cloud.google.com/apis)](https://console.cloud.google.com/apis)
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi1.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi1.png){: .align-center width="80%" loading="lazy"}
 
 
 <br><br>
@@ -120,11 +120,11 @@ last_modified_at: 2024-09-11
 
 ### API 사용 설정
 - API 및 서비스 사용 설정
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi2.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi2.png){: .align-center width="80%" loading="lazy"}
 
 - `Google Calendar API`, `Google Drive API` 사용 설정
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi3.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi3.png){: .align-center width="80%" loading="lazy"}
 
 
 <br><br>
@@ -132,7 +132,7 @@ last_modified_at: 2024-09-11
 
 ### OAuth 동의화면 설정
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi4.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi4.png){: .align-center width="80%" loading="lazy"}
 
 
 
@@ -143,7 +143,7 @@ last_modified_at: 2024-09-11
 - `OAuth 클라이언트ID`를 생성하여 <mark>클라이언트 ID</mark>와 <mark>클라이언트 보안 비밀번호</mark>를 저장
 - 나는 <mark>JSON 파일</mark>을 다운 받아서 사용할 것임
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi5.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/googleapi5.png){: .align-center width="80%" loading="lazy"}
 
 
 
@@ -239,7 +239,7 @@ private DriveService GetDriveService(UserCredential credentail, string applicati
 
 - 위의 코드를 구현하여 로그인하면 다음과 같은 권한 확인 페이지가 나옴
 
-![image](../../assets/posts_assets/2024-09-10-GoogleAPI/ui1.png){: .align-center width="80%"}
+![image](../../assets/posts_assets/2024-09-10-GoogleAPI/ui1.png){: .align-center width="80%" loading="lazy"}
 
 
 ### 이벤트 삽입

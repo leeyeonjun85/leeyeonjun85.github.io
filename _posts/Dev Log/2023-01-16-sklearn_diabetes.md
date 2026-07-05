@@ -23,7 +23,7 @@ last_modified_at: 2023-01-16
 ---
 
 
-![image](../../assets/images/etc/diabetes-2058045_1920.png){: .align-center width="60%"} 
+![image](../../assets/images/etc/diabetes-2058045_1920.png){: .align-center width="60%" loading="lazy"} 
   
 
 
@@ -341,7 +341,7 @@ diabetes = datasets.load_diabetes()
   plt.show()
   ```
 
-  ![image](../../assets/images/aib/results/sklearn_diabetes_corr.png){: .align-center width="90%"}  
+  ![image](../../assets/images/aib/results/sklearn_diabetes_corr.png){: .align-center width="90%" loading="lazy"}  
   
 
 - 데이터 분포 시각화
@@ -363,7 +363,7 @@ diabetes = datasets.load_diabetes()
   fig.savefig(path_results + file_name, dpi=150, facecolor='#eeeeee')
   ```  
 
-  ![image](../../assets/images/aib/results/sklearn_diabetes_scatterPlots.png){: .align-center width="90%"}  
+  ![image](../../assets/images/aib/results/sklearn_diabetes_scatterPlots.png){: .align-center width="90%" loading="lazy"}  
 
 
 
