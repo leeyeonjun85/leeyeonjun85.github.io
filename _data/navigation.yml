@@ -14,6 +14,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "정보관리기술사"
+    url: /pe/
   # - title: "Portfolio"
   #   url: /portfolio/
 
@@ -48,6 +50,48 @@ topics:
         url: /categories/#job
       - title: "개발환경·기타"
         url: /categories/#etc
+  - title: "📚 정보관리기술사"
+    children:
+      - title: "SW공학 ★★★★★"
+        url: /pe/#sw-eng
+      - title: "프로젝트관리 ★★★★★"
+        url: /pe/#pm
+      - title: "IT서비스관리 ★★★★"
+        url: /pe/#itsm
+      - title: "데이터베이스 ★★★★★"
+        url: /pe/#database
+      - title: "네트워크 ★★★★★"
+        url: /pe/#network
+      - title: "운영체제 ★★★★"
+        url: /pe/#os
+      - title: "보안 ★★★★★"
+        url: /pe/#security
+      - title: "클라우드 ★★★★★"
+        url: /pe/#cloud
+      - title: "DevOps ★★★★★"
+        url: /pe/#devops
+      - title: "SW아키텍처 ★★★★★"
+        url: /pe/#architecture
+      - title: "AI·빅데이터 ★★★★★"
+        url: /pe/#ai-bigdata
+      - title: "정보전략(ISP/EA) ★★★★★"
+        url: /pe/#isp-ea
+      - title: "IT거버넌스 ★★★★★"
+        url: /pe/#governance
+      - title: "경영정보"
+        url: /pe/#mis
+      - title: "정보시스템감리"
+        url: /pe/#audit
+      - title: "정보통신"
+        url: /pe/#telecom
+      - title: "품질경영"
+        url: /pe/#quality
+      - title: "법·제도"
+        url: /pe/#law
+      - title: "최신ICT"
+        url: /pe/#ict-trend
+      - title: "기술사공통"
+        url: /pe/#pe-common
   - title: "📂 일상"
     children:
       - title: "일상"

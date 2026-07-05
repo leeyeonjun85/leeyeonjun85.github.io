@@ -1,0 +1,82 @@
+# 정보관리기술사 도메인 정의 (인덱스 허브 /pe/ + 학습 목록용)
+# slug = 카테고리 값(영문), label = 사이드바/제목 표시(한글), stars = 중요도(0=미표기)
+- slug: sw-eng
+  label: "SW 공학"
+  stars: 5
+  topics: [요구사항 개발, 요구사항 관리, 기능/비기능 요구사항, 요구사항 추적성, 객체지향, SOLID, 디자인패턴, UML, 컴포넌트 설계, 인터페이스 설계, Agile, Scrum, XP, TDD, BDD, Pair Programming, 단위시험, 통합시험, 시스템시험, 인수시험, Regression Test, Smoke Test, Test Coverage, ISO25010, ISO9126, McCall, CMMI, SPICE]
+- slug: pm
+  label: "프로젝트관리(PM)"
+  stars: 5
+  topics: [PMBOK, WBS, CPM, PERT, 일정관리, 비용관리, 품질관리, 위험관리, 이해관계자관리, 형상관리, 변경관리, EVMS]
+- slug: itsm
+  label: "IT 서비스관리"
+  stars: 4
+  topics: [ITIL, SLA, SLM, Incident, Problem, Change, Release, Configuration, CMDB, Service Desk]
+- slug: database
+  label: "데이터베이스"
+  stars: 5
+  topics: [정규화, 반정규화, 트랜잭션, ACID, CAP, BASE, MVCC, Lock, Deadlock, Index, Partitioning, Sharding, Replication, Data Warehouse, Data Lake, Data Mart]
+- slug: network
+  label: "네트워크"
+  stars: 5
+  topics: [OSI 7계층, TCP/IP, IPv4, IPv6, Routing, NAT, VLAN, VPN, MPLS, SDN, NFV, DNS, DHCP, HTTP, HTTPS, MQTT, WebSocket]
+- slug: os
+  label: "운영체제"
+  stars: 4
+  topics: [Process, Thread, Scheduling, Memory, Virtual Memory, Paging, Segmentation, Deadlock, Semaphore, Mutex]
+- slug: security
+  label: "보안"
+  stars: 5
+  topics: [CIA, AAA, IAM, SSO, MFA, PKI, SSL/TLS, OAuth, OpenID Connect, JWT, Zero Trust, VPN, IPS, IDS, WAF, EDR, XDR, DRM, DLP]
+- slug: cloud
+  label: "클라우드"
+  stars: 5
+  topics: [IaaS, PaaS, SaaS, Public, Private, Hybrid, Multi Cloud, Container, Docker, Kubernetes, Service Mesh, API Gateway, Auto Scaling, Serverless, Cloud Native]
+- slug: devops
+  label: "DevOps"
+  stars: 5
+  topics: [CI, CD, Jenkins, GitOps, DevSecOps, IaC, Terraform, Ansible, ArgoCD, Monitoring, Observability]
+- slug: architecture
+  label: "소프트웨어 아키텍처"
+  stars: 5
+  topics: [Layered, Client/Server, SOA, MSA, Event Driven, CQRS, Event Sourcing, Hexagonal, Clean Architecture]
+- slug: ai-bigdata
+  label: "AI / 빅데이터"
+  stars: 5
+  topics: [AI, Machine Learning, Deep Learning, CNN, RNN, Transformer, LLM, Prompt Engineering, RAG, AI Agent, MCP, Vector DB, Fine Tuning, MLOps]
+- slug: isp-ea
+  label: "정보전략(ISP/EA)"
+  stars: 5
+  topics: [ISP, EA, TOGAF, Zachman, 업무아키텍처, 데이터아키텍처, 애플리케이션아키텍처, 기술아키텍처]
+- slug: governance
+  label: "IT 거버넌스"
+  stars: 5
+  topics: [COBIT, ISO38500, IT Governance, BSC, KPI, KGI, CSF]
+- slug: mis
+  label: "경영정보"
+  stars: 0
+  topics: [ERP, CRM, SCM, MES, PLM, BPM, KMS, Groupware]
+- slug: audit
+  label: "정보시스템 감리"
+  stars: 0
+  topics: [감리, 감리 절차, 감리 체크리스트, 감리 지적사항]
+- slug: telecom
+  label: "정보통신"
+  stars: 0
+  topics: [IoT, RFID, NFC, BLE, ZigBee, LoRa, UWB, 5G, Edge Computing]
+- slug: quality
+  label: "품질경영"
+  stars: 0
+  topics: [QA, QC, TQM, Six Sigma, Lean, SPC]
+- slug: law
+  label: "법·제도"
+  stars: 0
+  topics: [개인정보보호, 개인정보 영향평가, ISMS-P, 전자정부, SW진흥법, 클라우드 보안]
+- slug: ict-trend
+  label: "최신 ICT"
+  stars: 0
+  topics: [Digital Transformation, Hyper Automation, RPA, Low Code, No Code, Blockchain, Digital Twin, Metaverse, Green IT, ESG, Quantum Computing]
+- slug: pe-common
+  label: "기술사 공통"
+  stars: 0
+  topics: [기술사 윤리, 기술경영, 리더십, 위험관리, 의사결정, 혁신관리, 지속가능성]

@@ -130,4 +130,27 @@
 
 
 
+<!-- Mermaid 다이어그램 (```mermaid 코드블록이 있는 글에서만 로드) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var blocks = document.querySelectorAll('.language-mermaid');
+    if (!blocks.length) return; // 다이어그램 없으면 mermaid 미로딩 (성능)
+    blocks.forEach(function (el) {
+      var code = el.querySelector('code') || el;
+      var div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = code.textContent;
+      el.parentNode.replaceChild(div, el);
+    });
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+    s.onload = function () {
+      mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
+      mermaid.run();
+    };
+    document.head.appendChild(s);
+  });
+</script>
+
+
 <!-- end custom head snippets -->
