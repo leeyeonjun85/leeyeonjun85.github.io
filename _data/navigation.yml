@@ -52,31 +52,31 @@ topics:
         url: /categories/#etc
   - title: "📚 정보관리기술사"
     children:
-      - title: "SW공학 ★★★★★"
+      - title: "SW공학"
         url: /pe/#sw-eng
-      - title: "프로젝트관리 ★★★★★"
+      - title: "프로젝트관리"
         url: /pe/#pm
-      - title: "IT서비스관리 ★★★★"
+      - title: "IT서비스관리"
         url: /pe/#itsm
-      - title: "데이터베이스 ★★★★★"
+      - title: "데이터베이스"
         url: /pe/#database
-      - title: "네트워크 ★★★★★"
+      - title: "네트워크"
         url: /pe/#network
-      - title: "운영체제 ★★★★"
+      - title: "운영체제"
         url: /pe/#os
-      - title: "보안 ★★★★★"
+      - title: "보안"
         url: /pe/#security
-      - title: "클라우드 ★★★★★"
+      - title: "클라우드"
         url: /pe/#cloud
-      - title: "DevOps ★★★★★"
+      - title: "DevOps"
         url: /pe/#devops
-      - title: "SW아키텍처 ★★★★★"
+      - title: "SW아키텍처"
         url: /pe/#architecture
-      - title: "AI·빅데이터 ★★★★★"
+      - title: "AI·빅데이터"
         url: /pe/#ai-bigdata
-      - title: "정보전략(ISP/EA) ★★★★★"
+      - title: "정보전략(ISP/EA)"
         url: /pe/#isp-ea
-      - title: "IT거버넌스 ★★★★★"
+      - title: "IT거버넌스"
         url: /pe/#governance
       - title: "경영정보"
         url: /pe/#mis
