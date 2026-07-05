@@ -139,7 +139,7 @@ private static void gpioPin_ValueChanged(object sender, PinValueChangedEventArgs
 
 
 ### 라즈베리파이에 배포 후 테스트 실행
-- 라즈베리파이에 C# .NET 배포하는 방법은 이전 글 [RaspberryPi by C# .NET](https://leeyeonjun85.github.io/dev%20log/RaspberryPi-by-C-.NET/) 참조
+- 라즈베리파이에 C# .NET 배포하는 방법은 이전 글 [RaspberryPi by C# .NET](https://leeyeonjun85.github.io/csharp/RaspberryPi-by-C-.NET/) 참조
 
 <video autoplay loop muted playsinline preload="metadata" width="80%" style="display:block;margin:0 auto;"><source src="/assets/images/post/Button-LED/Button-LED.mp4" type="video/mp4"></video>
 
