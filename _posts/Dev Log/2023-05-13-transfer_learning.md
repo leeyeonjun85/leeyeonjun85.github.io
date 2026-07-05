@@ -3,7 +3,9 @@ title: "CV - 전이학습(Tranfer Learning)"
 excerpt: "컴퓨터 비전 : 전이학습(MobileNetV2) 적용하기"
 
 categories:
-  - Dev Log
+  - ai
+redirect_from:
+  - "/dev log/transfer_learning/"
 
 tags:
   - 개발일지

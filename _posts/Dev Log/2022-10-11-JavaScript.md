@@ -2,7 +2,9 @@
 title: "JavaScript"
 
 categories:
-  - Dev Log
+  - web
+redirect_from:
+  - "/dev log/JavaScript/"
 
 tags:
   - 개발일지

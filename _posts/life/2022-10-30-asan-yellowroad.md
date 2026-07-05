@@ -3,7 +3,7 @@ title: "아산 은행나무길 산책"
 excerpt: "가벼운 마음으로 걷는 아산 은행나무길"
 
 categories:
-  - Life
+  - life
 
 tags:
   - 산책

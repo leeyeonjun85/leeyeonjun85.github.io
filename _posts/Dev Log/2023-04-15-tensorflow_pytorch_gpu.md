@@ -3,7 +3,9 @@ title: "Tensorflow, Pytorch 윈도우 VSCode에서 GPU사용하기"
 excerpt: "VSCode에서 Tensorflow, Pytorch를 GPU사용하기"
 
 categories:
-  - Dev Log
+  - etc
+redirect_from:
+  - "/dev log/tensorflow_pytorch_gpu/"
 
 tags:
   - 개발일지

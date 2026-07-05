@@ -289,6 +289,7 @@ plugins:
   - jekyll-feed
   # - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -298,6 +299,7 @@ whitelist:
   - jekyll-feed
   # - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -354,8 +356,10 @@ defaults:
     values:
       layout: single
 
-      # 왼쪽 사이드바
+      # 왼쪽 사이드바 (작성자 프로필 + 주제 트리)
       author_profile: true
+      sidebar:
+        nav: "topics"
 
       # 오른쪽 사이드바
       toc: true

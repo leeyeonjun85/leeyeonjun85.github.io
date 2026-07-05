@@ -3,7 +3,9 @@ title: "정보처리기사 시험준비[시험결과, 후기 포함]"
 excerpt: "Engineer_Information_Processing"
 
 categories:
-  - Dev Log
+  - job
+redirect_from:
+  - "/dev log/EngineerInformationProcessing/"
 
 tags:
   - 개발일지

@@ -3,7 +3,9 @@ title: "화성땅 공동구매"
 excerpt: "화성에 땅을 사둘 수 있는 절호의 기회! 화성땅 공동구매에 참여하세요~"
 
 categories:
-  - Dev Log
+  - web
+redirect_from:
+  - "/dev log/spartaWeb_mars/"
 
 tags:
   - 개발일지

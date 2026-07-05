@@ -3,7 +3,9 @@ title: "C# Entity Framework Core : First Application"
 excerpt: "SQLite를 활용한 EFCore 시작하기"
 
 categories:
-  - Dev Log
+  - csharp
+redirect_from:
+  - "/dev log/CS_Entity_Framework_Core_FirstApp/"
 
 tags:
   - 개발일지

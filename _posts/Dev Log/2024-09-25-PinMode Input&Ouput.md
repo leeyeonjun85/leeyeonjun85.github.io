@@ -3,7 +3,9 @@ title: "PinMode Input & Output"
 excerpt: "라즈베리파이 : 핀입력, 핀출력"
 
 categories:
-  - Dev Log
+  - csharp
+redirect_from:
+  - "/dev log/PinMode-Input&Ouput/"
 
 tags:
   - 개발일지

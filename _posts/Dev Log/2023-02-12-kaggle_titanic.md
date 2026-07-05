@@ -3,7 +3,9 @@ title: "Kaggle Titanic"
 excerpt: "나무기반 모델의 분류문제"
 
 categories:
-  - Dev Log
+  - ai
+redirect_from:
+  - "/dev log/kaggle_titanic/"
 
 tags:
   - 개발일지

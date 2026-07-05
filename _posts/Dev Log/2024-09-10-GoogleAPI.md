@@ -3,7 +3,9 @@ title: "Google API & C#"
 excerpt: "구글API 활용하여 구글 캘린더, 구글 드라이브 연동하기"
 
 categories:
-  - Dev Log
+  - python
+redirect_from:
+  - "/dev log/GoogleAPI/"
 
 tags:
   - 개발일지

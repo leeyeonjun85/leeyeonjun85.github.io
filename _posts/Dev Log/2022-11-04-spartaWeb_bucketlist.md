@@ -3,7 +3,9 @@ title: "버킷리스트"
 excerpt: "이연준의 버킷리스트"
 
 categories:
-  - Dev Log
+  - web
+redirect_from:
+  - "/dev log/spartaWeb_bucketlist/"
 
 tags:
   - 개발일지

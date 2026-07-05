@@ -3,7 +3,9 @@ title: "Penguins 인공신경망"
 excerpt: "Penguins 데이터로 인공신경망 구성하기"
 
 categories:
-  - Dev Log
+  - ai
+redirect_from:
+  - "/dev log/penguins_neural/"
 
 tags:
   - 개발일지

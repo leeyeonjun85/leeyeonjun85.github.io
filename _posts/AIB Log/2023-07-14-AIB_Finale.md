@@ -5,7 +5,9 @@ title: "AI 부트캠프를 마치고..."
 excerpt: "코드스테이츠와 함께했던 AI 부트캠프 회고"
 
 categories:
-    - AIB Log
+  - aib
+redirect_from:
+  - "/aib log/AIB_Finale/"
 
 tags:
     - 개발일지

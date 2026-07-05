@@ -3,7 +3,9 @@ title: "RaspberryPi by C# .NET"
 excerpt: "C# .NET으로 라즈베리파이 사용하기"
 
 categories:
-  - Dev Log
+  - csharp
+redirect_from:
+  - "/dev log/RaspberryPi-by-C-.NET/"
 
 tags:
   - 개발일지

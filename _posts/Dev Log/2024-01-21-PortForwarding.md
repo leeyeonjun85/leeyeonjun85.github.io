@@ -3,7 +3,9 @@ title: "포트포워딩으로 MSSQL 외부접속 사용하기"
 excerpt: "External IP MSSQL and with Port Forwarding"
 
 categories:
-  - Dev Log
+  - job
+redirect_from:
+  - "/dev log/PortForwarding/"
 
 tags:
   - 개발일지

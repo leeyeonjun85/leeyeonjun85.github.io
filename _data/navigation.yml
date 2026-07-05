@@ -26,3 +26,29 @@ main:
   
   # - title: "External Link"
   #   url: https://google.com
+
+
+# 왼쪽 사이드바 주제 트리 (sidebar: nav: "topics")
+topics:
+  - title: "📂 IT"
+    children:
+      - title: "Web"
+        url: /categories/#web
+      - title: "AI · ML/DL"
+        url: /categories/#ai
+      - title: "Python"
+        url: /categories/#python
+      - title: "C# / .NET"
+        url: /categories/#csharp
+      - title: "Game"
+        url: /categories/#game
+      - title: "AIB (AI 부트캠프)"
+        url: /categories/#aib
+      - title: "Job (자격증·실무)"
+        url: /categories/#job
+      - title: "개발환경·기타"
+        url: /categories/#etc
+  - title: "📂 일상"
+    children:
+      - title: "일상"
+        url: /categories/#life

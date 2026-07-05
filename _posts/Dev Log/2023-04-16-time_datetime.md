@@ -3,7 +3,9 @@ title: "Python에서 시간 사용하기"
 excerpt: "내장함수 time(), datetime()으로 다양하게 시간 사용하기"
 
 categories:
-  - Dev Log
+  - python
+redirect_from:
+  - "/dev log/time_datetime/"
 
 tags:
   - 개발일지

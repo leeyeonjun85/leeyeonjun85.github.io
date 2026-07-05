@@ -3,7 +3,9 @@ title: "영화 기록실"
 excerpt: "영화 기록실: 내 생애 최고의 영화들"
 
 categories:
-  - Dev Log
+  - web
+redirect_from:
+  - "/dev log/spartaWeb_moviedia/"
 
 tags:
   - 개발일지

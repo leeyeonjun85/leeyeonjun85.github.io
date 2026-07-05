@@ -5,7 +5,9 @@ title: "AI 부트캠프 : SQL Challenge Day3"
 excerpt: "코드스테이츠와 함께하는 'SQL Challenge' 3일차 회고"
 
 categories:
-    - AIB Log
+  - aib
+redirect_from:
+  - "/aib log/AIB_SQL_Challenge_Day3/"
 
 tags:
     - 개발일지

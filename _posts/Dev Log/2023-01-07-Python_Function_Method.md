@@ -2,7 +2,9 @@
 title: "파이썬의 함수와 메서드"
 
 categories:
-  - Dev Log
+  - python
+redirect_from:
+  - "/dev log/Python_Function_Method/"
 
 tags:
   - 개발일지

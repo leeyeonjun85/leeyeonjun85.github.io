@@ -3,7 +3,9 @@ title: "핑클 팬명록"
 excerpt: "이 시대 최고의 걸그룹 핑클 팬명록~!"
 
 categories:
-  - Dev Log
+  - web
+redirect_from:
+  - "/dev log/spartaWeb_pinklepanlog/"
 
 tags:
   - 개발일지

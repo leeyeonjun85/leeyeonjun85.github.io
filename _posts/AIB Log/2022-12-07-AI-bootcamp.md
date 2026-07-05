@@ -3,7 +3,9 @@ title: "AI 부트캠프"
 excerpt: "코드스테이츠와 함께하는 'AI 부트캠프' 준비"
 
 categories:
-  - AIB Log
+  - aib
+redirect_from:
+  - "/aib log/AI-bootcamp/"
 
 tags:
   - 개발일지

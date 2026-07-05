@@ -3,7 +3,7 @@ title: "봉곡사 산책"
 excerpt: "기도하러 봉곡사 다녀왔어요"
 
 categories:
-  - Life
+  - life
 
 tags:
   - 산책

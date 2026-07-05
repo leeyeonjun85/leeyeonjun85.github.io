@@ -3,7 +3,9 @@ title: "Open Weather API를 이용한 날씨정보 웹어플 만들기"
 excerpt: "OpenWeather API, MongoDB, Django 활용"
 
 categories:
-  - Dev Log
+  - python
+redirect_from:
+  - "/dev log/openweather/"
 
 tags:
   - 개발일지

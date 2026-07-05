@@ -3,7 +3,9 @@ title: "Fashion MNIST 인공신경망"
 excerpt: "Fashion MNIST로 인공신경망 구성하기"
 
 categories:
-  - Dev Log
+  - ai
+redirect_from:
+  - "/dev log/fashion_mnist/"
 
 tags:
   - 개발일지

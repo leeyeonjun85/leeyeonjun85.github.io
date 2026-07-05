@@ -2,7 +2,9 @@
 title: "파이참 재설치 후 인터프리터 에러 해결 하기"
 
 categories:
-  - Dev Log
+  - etc
+redirect_from:
+  - "/dev log/pycharm_error01/"
 
 tags:
   - 개발일지

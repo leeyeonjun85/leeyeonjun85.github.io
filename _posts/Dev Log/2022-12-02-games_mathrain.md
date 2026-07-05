@@ -3,7 +3,9 @@ title: "Games: Math rain"
 excerpt: "수학게임을 만들어보자"
 
 categories:
-  - Dev Log
+  - game
+redirect_from:
+  - "/dev log/games_mathrain/"
 
 tags:
   - 개발일지

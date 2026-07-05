@@ -3,7 +3,9 @@ title: "Toydata - Scikit-Learn - Diabetes"
 excerpt: "토이데이터 살펴보기 Scikit-Learn : Diabetes"
 
 categories:
-  - Dev Log
+  - ai
+redirect_from:
+  - "/dev log/sklearn_diabetes/"
 
 tags:
   - 개발일지
