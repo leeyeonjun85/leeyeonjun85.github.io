@@ -23,13 +23,13 @@ last_modified_at: 2024-09-11
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/background/bitcoin-7693848_1920.png){: .align-center width="70%" loading="lazy"}   
 
 
-<br><br><br><br>
+<br><br>
 
 
 # Google API  
@@ -37,7 +37,7 @@ last_modified_at: 2024-09-11
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -62,7 +62,7 @@ last_modified_at: 2024-09-11
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 준비
@@ -97,7 +97,7 @@ last_modified_at: 2024-09-11
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 구글 API 클라이언트 설정
@@ -148,7 +148,7 @@ last_modified_at: 2024-09-11
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 테스트 UI 프로그램
@@ -357,7 +357,7 @@ private Google.Apis.Drive.v3.Data.File InsertFile(string parentPath, string file
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 후기
@@ -368,7 +368,7 @@ private Google.Apis.Drive.v3.Data.File InsertFile(string parentPath, string file
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 참고자료
@@ -378,11 +378,11 @@ private Google.Apis.Drive.v3.Data.File InsertFile(string parentPath, string file
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

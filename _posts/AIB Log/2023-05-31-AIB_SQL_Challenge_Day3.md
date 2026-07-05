@@ -23,13 +23,13 @@ last_modified_at: 2023-05-31
 ---
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/sql.png){: .align-center width="70%" loading="lazy"}  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -42,7 +42,7 @@ last_modified_at: 2023-05-31
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -67,7 +67,7 @@ last_modified_at: 2023-05-31
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -183,7 +183,7 @@ ORDER BY    SCORE DESC, INFO.FAVORITES DESC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -265,7 +265,7 @@ ORDER BY    CAR_TYPE ASC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -467,10 +467,10 @@ ORDER BY    FEE DESC, CAR_TYPE, CAR_ID DESC
 
 
 
-<br><br><br><br>  
+<br><br>
 <center>  
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>  
 </center>  
-<br><br><br><br>  
+<br><br>
 
 

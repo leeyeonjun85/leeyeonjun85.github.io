@@ -97,7 +97,7 @@ google_site_verification :  # Google Search Console → HTML 태그 인증의 co
 bing_site_verification   :
 # 한국어 블로그는 네이버 검색 노출이 중요합니다.
 # 네이버 서치어드바이저(searchadvisor.naver.com) → 사이트 등록 → HTML 태그의 content 값 입력
-naver_site_verification  :
+naver_site_verification  : "8cecc007fc4a787dca0f14ae36ba38bf9e77ea60"
 yandex_site_verification :
 baidu_site_verification  :
 

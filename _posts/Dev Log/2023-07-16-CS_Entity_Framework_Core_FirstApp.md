@@ -23,19 +23,19 @@ last_modified_at: 2023-07-16
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/1_FWSSoTefmvAfVB-XanzJdQ.webp){: .align-center width="70%" loading="lazy"}   
 
 
-<br><br><br><br>
+<br><br>
 
 
 # Entity Framework Core  
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## Entity Framework Core 소개
@@ -74,7 +74,7 @@ last_modified_at: 2023-07-16
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -339,7 +339,7 @@ db.SaveChanges();
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -436,11 +436,11 @@ db.SaveChanges();
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

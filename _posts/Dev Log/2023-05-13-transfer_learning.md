@@ -27,11 +27,11 @@ last_modified_at: 2023-05-13
 
 
 
-<br><br><br><br>
+<br><br>
 
 ![image](../../assets/images/post/cv_1/s_shoulders_of_giants.jpg){: .align-center width="60%" loading="lazy"}  
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -48,7 +48,7 @@ last_modified_at: 2023-05-13
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 개요
@@ -484,11 +484,11 @@ last_modified_at: 2023-05-13
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

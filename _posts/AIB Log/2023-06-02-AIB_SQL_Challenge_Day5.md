@@ -23,13 +23,13 @@ last_modified_at: 2023-06-02
 ---
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/sql.png){: .align-center width="70%" loading="lazy"}  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -42,7 +42,7 @@ last_modified_at: 2023-06-02
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -67,7 +67,7 @@ last_modified_at: 2023-06-02
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -156,7 +156,7 @@ ORDER BY    PUBLISHED_DATE ASC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -293,7 +293,7 @@ ORDER BY    TOTAL_SALES ASC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -394,10 +394,10 @@ ORDER BY    INS.DATETIME ASC
 
 
 
-<br><br><br><br>  
+<br><br>
 <center>  
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>  
 </center>  
-<br><br><br><br>  
+<br><br>
 
 

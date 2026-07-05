@@ -23,12 +23,12 @@ last_modified_at: 2024-09-14
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/RaspberryPi-dotNet.png){: .align-center width="70%" loading="lazy"}
 
-<br><br><br><br>
+<br><br>
 
 
 # RaspberryPi by C# .NET  
@@ -38,7 +38,7 @@ last_modified_at: 2024-09-14
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 개요
@@ -168,7 +168,7 @@ Hello, 채은!
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ## 참고자료
@@ -177,11 +177,11 @@ Hello, 채은!
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

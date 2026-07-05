@@ -371,8 +371,8 @@ diabetes = datasets.load_diabetes()
 
 
 
-<br><br><br><br>  
+<br><br>
 <center>  
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>  
 </center>  
-<br><br><br><br>  
+<br><br>

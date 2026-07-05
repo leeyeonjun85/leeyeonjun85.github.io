@@ -24,13 +24,13 @@ last_modified_at: 2024-01-28
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/exam-2428208_1280.png){: .align-center width="70%" loading="lazy"}   
 
 
-<br><br><br><br>
+<br><br>
 
 
 # 정보처리기사 시험준비  
@@ -39,7 +39,7 @@ last_modified_at: 2024-01-28
 > 주요항목  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -425,7 +425,7 @@ last_modified_at: 2024-01-28
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -439,7 +439,7 @@ last_modified_at: 2024-01-28
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -496,11 +496,11 @@ last_modified_at: 2024-01-28
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

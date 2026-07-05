@@ -23,13 +23,13 @@ last_modified_at: 2023-07-14
 ---
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/start_road.jpg){: .align-center width="70%" loading="lazy"}  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -41,7 +41,7 @@ last_modified_at: 2023-07-14
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -68,7 +68,7 @@ last_modified_at: 2023-07-14
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -264,7 +264,7 @@ last_modified_at: 2023-07-14
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -297,11 +297,11 @@ last_modified_at: 2023-07-14
 
 
 
-<br><br><br><br>  
+<br><br>
 <center>  
 <h1>부트캠프 완주해서 꼭 원하는 것을 이루시길 바래요🌈</h1> 
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>  
 </center>  
-<br><br><br><br>  
+<br><br>
 
 

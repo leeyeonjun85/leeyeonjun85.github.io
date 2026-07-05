@@ -23,13 +23,13 @@ last_modified_at: 2023-05-30
 ---
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/etc/sql.png){: .align-center width="70%" loading="lazy"}  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -42,7 +42,7 @@ last_modified_at: 2023-05-30
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -67,7 +67,7 @@ SQL에 점점 자신감이 생긴다.
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -150,7 +150,7 @@ ORDER   BY  FACTORY_ID ASC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -232,7 +232,7 @@ WHERE       PRICE = (
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -334,7 +334,7 @@ ORDER   BY  PRICE DESC
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -468,7 +468,7 @@ FROM        (
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -549,7 +549,7 @@ ORDER BY    WAREHOUSE_ID
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -646,10 +646,10 @@ ORDER BY    BOARD_ID DESC
 
 
 
-<br><br><br><br>  
+<br><br>
 <center>  
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>  
 </center>  
-<br><br><br><br>  
+<br><br>
 
 

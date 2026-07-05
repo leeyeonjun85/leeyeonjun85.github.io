@@ -25,7 +25,7 @@ last_modified_at: 2023-04-16
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -35,7 +35,7 @@ last_modified_at: 2023-04-16
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -46,7 +46,7 @@ last_modified_at: 2023-04-16
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -99,7 +99,7 @@ date +%s
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -282,11 +282,11 @@ print(f"소요시간 : {-time_check}")
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 

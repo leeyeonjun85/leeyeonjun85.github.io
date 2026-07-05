@@ -25,13 +25,13 @@ last_modified_at: 2024-01-21
 
 
 
-<br><br><br><br>
+<br><br>
 
 
 ![image](../../assets/images/Database/big-data-7216839_1280.png){: .align-center width="70%" loading="lazy"}   
 
 
-<br><br><br><br>
+<br><br>
 
 
 # 포트포워딩으로 MSSQL 외부접속 사용하기  
@@ -40,7 +40,7 @@ last_modified_at: 2024-01-21
 > MSSQL  
 
 
-<br><br><br><br>
+<br><br>
 
 
 
@@ -139,11 +139,11 @@ last_modified_at: 2024-01-21
 
 
 
-<br><br><br><br>
+<br><br>
 <center>
 <h1>끝까지 읽어주셔서 감사합니다😉</h1>
 </center>
-<br><br><br><br>
+<br><br>
 
 
 
