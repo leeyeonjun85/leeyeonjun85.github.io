@@ -11,7 +11,7 @@ excerpt: "한 줄 요약 — 답안 첫 문장으로 쓸 정의"
 categories:
   - security          # ← 도메인 슬러그 1개
 tags:
-  - 정보관리기술사
+  - PEIM
   - 보안              # ← 중간그룹/교차주제 (예: 인증, 암호, 네트워크보안)
 use_math: true
 toc: true
