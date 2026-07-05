@@ -14,7 +14,7 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "정보관리기술사"
+  - title: "PEIM"
     url: /pe/
   # - title: "Portfolio"
   #   url: /portfolio/
@@ -50,7 +50,7 @@ topics:
         url: /categories/#job
       - title: "개발환경·기타"
         url: /categories/#etc
-  - title: "📚 정보관리기술사"
+  - title: "📚 PEIM"
     children:
       - title: "SW공학"
         url: /pe/#sw-eng
